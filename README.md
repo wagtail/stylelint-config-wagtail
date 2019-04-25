@@ -17,3 +17,11 @@ It requires `stylelint`, and `stylelint-scss`.
 
 * [Stylelint](https://stylelint.io/)
 * [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
+
+# Development
+
+* Run `npm install` after checking out the code
+* Set up your editor to use `Prettier`, `Eslint` and `Stylelint`
+* When working with the rule set, only modify the `index.js` file, not the `.stylelintrc` file as it is for local linting only
+* Run tests via `npm run test`
+* Run preflight checks before commiting final code via `npm run preflight`
