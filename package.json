@@ -8,7 +8,7 @@
     "lint": "eslint ./ --max-warnings 0",
     "prettier:check": "prettier --check '**/**.{js,scss}'",
     "prettier": "prettier --write '**/**.{js,scss}'",
-    "preflight": "npm run lint && npm run prettier && npm run test"
+    "preflight": "npm run prettier && npm run lint && npm run test"
   },
   "dependencies": {
     "stylelint-scss": "^3.6.0"
