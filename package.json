@@ -1,0 +1,28 @@
+{
+  "name": "stylelint-config-wagtail",
+  "version": "0.0.1",
+  "description": "Stylelint config rules for Wagtail styles (Saas)",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "stylelint-scss": "^3.6.0"
+  },
+  "devDependencies": {
+    "stylelint": "^10.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wagtail/stylelint-config-wagtail.git"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "wagtail"
+  ],
+  "author": "wagtail",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wagtail/stylelint-config-wagtail/issues"
+  },
+  "homepage": "https://github.com/wagtail/stylelint-config-wagtail#readme"
+}
