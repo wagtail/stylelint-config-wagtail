@@ -1,3 +1,71 @@
+/* invalid scss */
+/* Important: When testing, avoid testing issues that prettier will auto-fix */
+
+/* invalid empty comment */
+/**/
+
 .helpful-button {
+    /* color-named */
     color: red;
+}
+
+@mixin optionalItem($size: 1rem) {
+    /* block-no-empty */
+    @if size == 1rem {
+    }
+}
+
+/* declaration-block-no-duplicate-properties */
+
+.warning-panel {
+    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+/* declaration-property-value-blacklist */
+
+.no-border {
+    border: none;
+}
+
+/* length-zero-no-unit */
+.small-thing {
+    font-size: 0rem;
+}
+
+/* max-nesting-depth */
+.a {
+    .b {
+        .c {
+            margin: 2rem;
+            .d {
+                margin: 1rem;
+                .too-deep {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* selector-max-id */
+.no-id {
+    #unique {
+        font-style: initial;
+    }
+}
+
+/* unit-no-unknown */
+.active {
+    font-size: 1.5xor;
+}
+
+/* scss/at-rule-no-unknown */
+@not-a-thing optionalItem($size: 1rem) {
+    @if size == 1rem {
+        font-size: 1rem;
+    } @else {
+        font-size: $size;
+        line-height: $size * 1.5;
+    }
 }
