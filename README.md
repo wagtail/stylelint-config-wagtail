@@ -1,4 +1,5 @@
 # stylelint-config-wagtail
+
 Stylelint Config Wagtail
 
 **Important: Not Yet Implemented - still a WIP**
@@ -13,15 +14,26 @@ It requires `stylelint`, and `stylelint-scss`.
 1. Run `npm install stylelint stylelint-scss styelint-config-wagtail --save-dev`
 2. Add `"extends": "wagtail"` to your `.stylelintrc`
 
-# Links
+## Links
 
-* [Stylelint](https://stylelint.io/)
-* [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
+- [Stylelint](https://stylelint.io/)
+- [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
 
-# Development
+## Contribution Guidelines
 
-* Run `npm install` after checking out the code
-* Set up your editor to use `Prettier`, `Eslint` and `Stylelint`
-* When working with the rule set, only modify the `index.js` file, not the `.stylelintrc` file as it is for local linting only
-* Run tests via `npm run test`
-* Run preflight checks before commiting final code via `npm run preflight`
+### Install
+
+- Required [Node](https://nodejs.org)
+- We recommend using [nvm](https://github.com/creationix/nvm)
+- Clone the project on to your computer
+- Run `nvm install` to ensure you have the correct Node version
+- Run `npm install` to install project dependencies
+- Ensure your editor is set up to use [editorconfig](https://editorconfig.org/), [Prettier](https://prettier.io/), [Eslint](https://eslint.org/) and [Stylelint](https://stylelint.io/)
+
+### Development
+
+- Run `nvm use` to set Node to the correct version
+- Run tests via `npm run test`
+- Run linting via `npm run lint`
+- Run preflight checks before commiting final code via `npm run preflight`
+- Note: When working with the rule set, only modify the `index.js` file, not the `.eslintrc` file as it is for local linting only
