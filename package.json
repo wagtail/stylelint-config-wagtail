@@ -4,11 +4,10 @@
   "description": "Stylelint config rules for Wagtail styles (Saas)",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint ./ --max-warnings 0",
-    "prettier:check": "prettier --check '**/**.{js,scss}'",
-    "prettier": "prettier --write '**/**.{js,scss}'",
-    "preflight": "npm run prettier && npm run lint && npm run test"
+    "format": "prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",
+    "lint": "eslint ./ --max-warnings 0 && prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",
+    "preflight": "npm run lint && npm run test",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
