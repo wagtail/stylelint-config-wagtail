@@ -28,8 +28,13 @@
     "url": "git+https://github.com/wagtail/stylelint-config-wagtail.git"
   },
   "keywords": [
-    "stylelint",
+    "bem",
+    "config",
+    "itcss",
+    "lint",
+    "styleguide",
     "stylelint-config",
+    "stylelint",
     "wagtail"
   ],
   "author": "wagtail",
