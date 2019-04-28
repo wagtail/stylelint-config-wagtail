@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-wagtail",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stylelint config rules for Wagtail styles (Saas)",
   "main": "index.js",
   "scripts": {
