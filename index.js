@@ -5,7 +5,7 @@ module.exports = {
     'block-closing-brace-newline-after': [
       'always',
       // Ignore @if … @else in scss
-      { ignoreAtRules: ['if', 'else'] }
+      { ignoreAtRules: ['if', 'else'] },
     ],
     'block-no-empty': true,
     'block-opening-brace-space-before': 'always',
@@ -23,7 +23,7 @@ module.exports = {
     'declaration-colon-space-before': 'never',
     'declaration-property-value-blacklist': [
       { '/^border/': ['none'] },
-      { severity: 'error' }
+      { severity: 'error' },
     ],
     'declaration-no-important': true,
     'font-family-no-duplicate-names': true,
@@ -48,7 +48,7 @@ module.exports = {
     'property-no-vendor-prefix': true,
     'rule-empty-line-before': [
       'always',
-      { except: ['after-single-line-comment', 'first-nested'] }
+      { except: ['after-single-line-comment', 'first-nested'] },
     ],
     'scss/at-else-empty-line-before': 'never',
     'scss/at-import-no-partial-leading-underscore': true,
@@ -65,6 +65,6 @@ module.exports = {
     'string-quotes': 'single',
     'unit-case': 'lower',
     'unit-no-unknown': true,
-    'value-no-vendor-prefix': true
-  }
+    'value-no-vendor-prefix': true,
+  },
 };

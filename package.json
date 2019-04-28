@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/wagtail/stylelint-config-wagtail#readme",
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }

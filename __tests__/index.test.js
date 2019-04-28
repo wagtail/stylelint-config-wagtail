@@ -11,7 +11,7 @@ describe('flags no warnings with valid css', () => {
   beforeEach(() => {
     result = stylelint.lint({
       code: validScss,
-      config
+      config,
     });
   });
 
@@ -28,7 +28,7 @@ describe('flags warnings with invalid css', () => {
   beforeEach(() => {
     result = stylelint.lint({
       code: invalidScss,
-      config
+      config,
     });
   });
 
