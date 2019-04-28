@@ -32,7 +32,6 @@ module.exports = {
     'function-linear-gradient-no-nonstandard-direction': true,
     'function-parentheses-space-inside': 'never',
     'function-url-quotes': 'always',
-    // prettier-ignore
     'indentation': [4, { severity: 'warning' }],
     'length-zero-no-unit': true,
     'max-nesting-depth': 3,
