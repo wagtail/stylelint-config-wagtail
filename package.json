@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config-wagtail",
+  "name": "@wagtail/stylelint-config-wagtail",
   "version": "0.0.3",
   "description": "Stylelint config rules for Wagtail styles (Saas)",
   "main": "index.js",
