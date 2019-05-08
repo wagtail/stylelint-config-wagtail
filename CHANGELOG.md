@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Readme updated, stylelint-scss is not needed as a dependency on projects that extend this config.
+
 ## [0.1.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.1.0) - 2019-05-09
 
 - Initial release
