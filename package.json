@@ -16,7 +16,7 @@
     "url": "git+https://github.com/wagtail/stylelint-config-wagtail.git"
   },
   "dependencies": {
-    "stylelint-scss": "^3.6.1"
+    "stylelint-scss": ">=3.6.1"
   },
   "devDependencies": {
     "eslint": "^2.12.0",
