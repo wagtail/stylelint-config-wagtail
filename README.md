@@ -1,6 +1,8 @@
-# Stylelint Config Wagtail
+# [stylelint-config-wagtail](https://www.npmjs.com/package/stylelint-config-wagtail) [<img src="https://raw.githubusercontent.com/wagtail/stylelint-config-wagtail/master/.github/stylelint-logo.svg?sanitize=true" alt="Stylelint" width="90" height="90" align="right">](https://stylelint.io)
 
-The package provides Wagtail's `.stylelintrc` as an extensible shared config.
+[![stylelint-config-wagtail on npm](https://img.shields.io/npm/v/stylelint-config-wagtail.svg)](https://www.npmjs.com/package/stylelint-config-wagtail)
+
+> Shareable stylelint config for CSS and SCSS, following Wagtail’s code style.
 
 ## Usage
 
