@@ -1,7 +1,7 @@
 {
   "name": "@wagtail/stylelint-config-wagtail",
   "version": "0.1.0",
-  "description": "Stylelint config rules for Wagtail styles (Saas)",
+  "description": "Shareable stylelint config for CSS and SCSS, following Wagtail’s code style",
   "main": "index.js",
   "scripts": {
     "format": "prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",
