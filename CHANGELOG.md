@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Update `stylelint-scss` dependency to latest version.
 - Update stylelint to require a minimum of v13.5.0.
+- Switch scss/media-feature-value-dollar-variable to ignore keyword values
 
 ## [0.1.1](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.1.1) - 2020-06-03
 

@@ -53,7 +53,10 @@ module.exports = {
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension-blacklist': ['scss'],
     'scss/at-rule-no-unknown': true,
-    'scss/media-feature-value-dollar-variable': 'always',
+    'scss/media-feature-value-dollar-variable': [
+      'always',
+      { ignore: ['keywords'] },
+    ],
     'scss/selector-no-redundant-nesting-selector': true,
     'selector-list-comma-newline-after': 'always',
     'selector-max-id': 0,
