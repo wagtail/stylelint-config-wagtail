@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.2.0) - 2021-06-26
+
+### Changed
+
+- Update `stylelint-scss` dependency to latest version.
+- Update stylelint to require a minimum of v13.5.0.
+
 ## [0.1.1](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.1.1) - 2020-06-03
 
 ### Changed
