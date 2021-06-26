@@ -1,11 +1,15 @@
 {
+  "extends": "@wagtail/eslint-config-wagtail",
   "env": {
     "node": true,
     "jest": true
   },
-  "extends": "wagtail",
   "parserOptions": {
     "ecmaVersion": 9
   },
-  "rules": {}
+  "rules": {},
+  "settings": {
+    // Manually set the version to disable automated detection of the "react" dependency.
+    "react": { "version": "latest" }
+  }
 }
