@@ -21,7 +21,7 @@ module.exports = {
     'declaration-block-trailing-semicolon': 'always',
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
-    'declaration-property-value-blacklist': [
+    'declaration-property-value-disallowed-list': [
       { '/^border/': ['none'] },
       { severity: 'error' },
     ],
