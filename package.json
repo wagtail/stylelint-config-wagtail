@@ -19,7 +19,8 @@
     "url": "git+https://github.com/wagtail/stylelint-config-wagtail.git"
   },
   "dependencies": {
-    "stylelint-scss": "^3.20.1"
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-scss": "^4.0.1"
   },
   "devDependencies": {
     "@wagtail/eslint-config-wagtail": "^0.3.0",
@@ -31,10 +32,10 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "jest": "^27.0.5",
     "prettier": "^2.3.2",
-    "stylelint": "^13.13.1"
+    "stylelint": "^14.1.0"
   },
   "peerDependencies": {
-    "stylelint": ">=13.13.0"
+    "stylelint": ">=14.1.0"
   },
   "keywords": [
     "bem",
