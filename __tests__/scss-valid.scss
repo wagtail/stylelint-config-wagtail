@@ -1,15 +1,20 @@
+$color--blue: #4233dd;
+$font--mono: 'Courier New', Courier, monospace;
+$spacing--1: 1rem;
+$font--m: 1rem;
+
 /* valid scss */
 .helpful-button {
-    color: #4233dd;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    color: $color--blue;
+    font-family: $font--mono;
+    font-size: $font--m;
 }
 
 /* valid comment containing helpful context */
 
 @mixin optionalItem($size: 1rem) {
     @if size == 1rem {
-        font-size: 1rem;
+        font-size: $size;
     } @else {
         font-size: $size;
         line-height: $size * 1.5;
@@ -18,8 +23,9 @@
 
 .logo {
     display: block;
+    /* stylelint-disable-next-line scale-unlimited/declaration-strict-value */
     color: #aaa;
-    padding: 0.9em 1.2em;
+    padding: $spacing--1;
     -webkit-font-smoothing: auto;
 }
 
@@ -28,7 +34,7 @@
         width: 20px;
         float: inline-start;
         border: 0;
-        margin-inline-end: 1em;
+        margin-inline-end: $spacing--1;
     }
 
     &:hover {
