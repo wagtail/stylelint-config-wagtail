@@ -7,11 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.3.0) - 2021-12-22
+
 ### Changed
 
-- Update `stylelint-scss` dependency to latest version (3.20.1)
-- Update `stylelint` to require a minimum of v13.13.0
-- Fix rule name, to replace with [`declaration-property-value-disallowed-list`](https://github.com/stylelint/stylelint/blob/13.7.0/lib/rules/declaration-property-value-blacklist/README.md)
+- Update `stylelint` to require a minimum of v14.1.0 (PostCSS v8).
+- Update `stylelint-scss` dependency to latest version (4.0.1).
+- Replace stylistic rules with [`stylelint-config-prettier-scss`](https://github.com/prettier/stylelint-config-prettier-scss), for compatibility with Prettier.
+- Fix rule name, to replace with [`declaration-property-value-disallowed-list`](https://github.com/stylelint/stylelint/blob/13.7.0/lib/rules/declaration-property-value-blacklist/README.md).
 
 ## [0.2.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.2.0) - 2021-06-27
 
