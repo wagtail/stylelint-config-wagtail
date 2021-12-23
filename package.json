@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-scss": "^4.0.1"
+    "stylelint-config-recommended-scss": "^5.0.2"
   },
   "devDependencies": {
     "@wagtail/eslint-config-wagtail": "^0.3.0",

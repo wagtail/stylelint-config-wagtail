@@ -14,7 +14,7 @@ Our default export contains all of our Stylelint rules, along with specific plug
 ## Links
 
 - [Stylelint](https://stylelint.io/)
-- [stylelint-scss](https://github.com/stylelint-scss/stylelint-scss)
+- [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss)
 - [stylelint-config-prettier-scss](https://github.com/prettier/stylelint-config-prettier-scss)
 
 ## Contribution Guidelines

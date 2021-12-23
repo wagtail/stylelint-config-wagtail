@@ -1,6 +1,8 @@
 module.exports = {
-  extends: ['stylelint-config-prettier-scss'],
-  plugins: ['stylelint-scss'],
+  extends: [
+    'stylelint-config-recommended-scss',
+    'stylelint-config-prettier-scss',
+  ],
   rules: {
     'block-no-empty': true,
     'color-hex-length': 'short',
@@ -28,9 +30,6 @@ module.exports = {
       'always',
       { except: ['after-single-line-comment', 'first-nested'] },
     ],
-    'scss/at-import-no-partial-leading-underscore': true,
-    'scss/at-import-partial-extension-blacklist': ['scss'],
-    'scss/at-rule-no-unknown': true,
     'scss/media-feature-value-dollar-variable': [
       'always',
       { ignore: ['keywords'] },
