@@ -30,6 +30,8 @@ module.exports = {
       'always',
       { except: ['after-single-line-comment', 'first-nested'] },
     ],
+    'scss/at-import-partial-extension': null,
+    'scss/at-import-partial-extension-blacklist': ['scss'],
     'scss/media-feature-value-dollar-variable': [
       'always',
       { ignore: ['keywords'] },
