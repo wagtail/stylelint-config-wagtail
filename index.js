@@ -3,6 +3,7 @@ module.exports = {
     'stylelint-config-recommended-scss',
     'stylelint-config-prettier-scss',
   ],
+  plugins: ['stylelint-declaration-strict-value'],
   rules: {
     'block-no-empty': true,
     'color-hex-length': 'short',
@@ -40,6 +41,33 @@ module.exports = {
     'rule-empty-line-before': [
       'always',
       { except: ['after-single-line-comment', 'first-nested'] },
+    ],
+    'scale-unlimited/declaration-strict-value': [
+      [
+        // Colors should always be defined from variables or functions.
+        '/color/',
+        'fill',
+        'stroke',
+        // Font tokens should come from our design tokens.
+        'font-family',
+        'font-size',
+        'font-weight',
+        // Spacing should use a consistent scale rather than hard-coded values.
+        '/margin/',
+        '/padding/',
+        'gap',
+        // Consistently using variables for z-index allows us to define the order of the values globally.
+        'z-index',
+      ],
+      {
+        ignoreValues: [
+          'currentColor',
+          'inherit',
+          'initial',
+          'none',
+          'transparent',
+        ],
+      },
     ],
     'scss/at-import-partial-extension': null,
     'scss/at-import-partial-extension-blacklist': ['scss'],
