@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update internal package nanoid version.
+
 ## [0.3.2](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.3.2) - 2021-12-23
 
 ### Changed
