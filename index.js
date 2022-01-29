@@ -11,6 +11,12 @@ module.exports = {
     'declaration-block-no-duplicate-properties': true,
     'declaration-block-no-redundant-longhand-properties': true,
     'declaration-block-single-line-max-declarations': 1,
+    'declaration-property-value-allowed-list': {
+      // Only allow logical values.
+      'clear': ['both'],
+      'float': ['inline-start', 'inline-end'],
+      'text-align': ['start', 'end', 'center'],
+    },
     'declaration-property-value-disallowed-list': [
       { '/^border/': ['none'] },
       { severity: 'error' },
@@ -24,6 +30,11 @@ module.exports = {
     'max-nesting-depth': 3,
     'media-feature-name-no-unknown': true,
     'no-empty-source': true,
+    'property-disallowed-list': [
+      // Disallow positioning with physical properties. Use logical ones instead.
+      '/left/',
+      '/right/',
+    ],
     'property-no-unknown': true,
     'property-no-vendor-prefix': true,
     'rule-empty-line-before': [

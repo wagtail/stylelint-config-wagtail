@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Update internal package nanoid version.
+- Start enforcing [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties) so that projects can better RTL.
 
 ## [0.3.2](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.3.2) - 2021-12-23
 
