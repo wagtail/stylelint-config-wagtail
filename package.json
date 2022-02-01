@@ -35,16 +35,17 @@
     "stylelint-declaration-strict-value": "^1.8.0"
   },
   "devDependencies": {
-    "@wagtail/eslint-config-wagtail": "^0.3.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "jest": "^27.0.5",
-    "prettier": "^2.3.2",
-    "stylelint": "^14.1.0"
+    "@wagtail/eslint-config-wagtail": "^0.4.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react": "^7.27.1",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0"
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",
