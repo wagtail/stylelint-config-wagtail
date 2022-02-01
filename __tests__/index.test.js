@@ -3,36 +3,52 @@ const stylelint = require('stylelint');
 
 const config = require('..');
 
-const validScss = fs.readFileSync('./__tests__/scss-valid.scss', 'utf-8');
-const invalidScss = fs.readFileSync('./__tests__/scss-invalid.scss', 'utf-8');
-
 describe('flags no warnings with valid css', () => {
+  const code = fs.readFileSync('./__tests__/scss-valid.scss', 'utf-8');
+
   let result;
 
   beforeEach(() => {
-    result = stylelint.lint({
-      code: validScss,
-      config,
+    result = stylelint.lint({ code, config });
+  });
+
+  it('did not error', (done) => {
+    expect.assertions(1);
+
+    result.then((data) => {
+      expect(data.errored).toBeFalsy();
+
+      done();
     });
   });
 
-  it('did not error', () =>
-    result.then((data) => expect(data.errored).toBeFalsy()));
+  it('flags no warnings', (done) => {
+    expect.assertions(1);
 
-  it('flags no warnings', () =>
-    result.then((data) => expect(data.results[0].warnings).toHaveLength(0)));
+    result.then((data) => {
+      expect(data.results[0].warnings).toHaveLength(0);
+
+      done();
+    });
+  });
 });
 
 describe('flags warnings with invalid css', () => {
+  const code = fs.readFileSync('./__tests__/scss-invalid.scss', 'utf-8');
+
   let result;
 
   beforeEach(() => {
-    result = stylelint.lint({
-      code: invalidScss,
-      config,
-    });
+    result = stylelint.lint({ code, config });
   });
 
-  it('did error', () =>
-    result.then((data) => expect(data.errored).toBeTruthy()));
+  it('did error', (done) => {
+    expect.assertions(1);
+
+    result.then((data) => {
+      expect(data.errored).toBeTruthy();
+
+      done();
+    });
+  });
 });
