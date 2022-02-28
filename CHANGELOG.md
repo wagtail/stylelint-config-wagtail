@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.1](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.4.0) - 2022-02-28
+
+### Fixed
+
+- Allow `clear: none`, `float: none`, and `float: unset` rather than only logical values.
+
 ## [0.4.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.4.0) - 2022-02-27
 
 ### Added

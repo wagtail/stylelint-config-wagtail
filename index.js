@@ -13,9 +13,11 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': true,
     'declaration-block-single-line-max-declarations': 1,
     'declaration-property-value-allowed-list': {
+      // Only allow logical values, and resets.
+      'clear': ['both', 'none'],
+      // Only allow logical values, and resets.
+      'float': ['inline-start', 'inline-end', 'none', 'unset'],
       // Only allow logical values.
-      'clear': ['both'],
-      'float': ['inline-start', 'inline-end'],
       'text-align': ['start', 'end', 'center'],
     },
     'declaration-property-value-disallowed-list': [
