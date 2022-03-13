@@ -23,7 +23,6 @@ module.exports = {
     'declaration-property-value-disallowed-list': [
       { '/^border/': ['none'] },
       { severity: 'error' },
-      { 'text-transform': 'uppercase' },
     ],
     'declaration-no-important': true,
     'font-family-no-duplicate-names': true,
