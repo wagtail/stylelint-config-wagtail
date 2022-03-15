@@ -37,6 +37,8 @@ module.exports = {
       // Disallow positioning with physical properties. Use logical ones instead.
       '/left/',
       '/right/',
+      // Disallow text-transform.
+      'text-transform',
     ],
     'property-no-unknown': true,
     'property-no-vendor-prefix': true,
