@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add linting rule to block `text-transform`, see [wagtail#7624](https://github.com/wagtail/wagtail/issues/7624) for the reasoning behind this change ([#16](https://github.com/wagtail/stylelint-config-wagtail/pull/16)).
+- Enforce mixin usage `@include ...` being used at the top of any declaration blocks.
 
 ## [0.4.1](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.4.1) - 2022-02-28
 

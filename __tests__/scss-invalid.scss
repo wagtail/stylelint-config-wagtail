@@ -81,4 +81,5 @@
     float: left;
     margin-right: 1em;
     text-align: right;
+    @include optionalItem; // should not be at the bottom
 }
