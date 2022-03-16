@@ -43,10 +43,15 @@ describe('flags warnings with invalid css', () => {
   });
 
   it('did error', (done) => {
-    expect.assertions(1);
+    expect.assertions(2);
 
     result.then((data) => {
       expect(data.errored).toBeTruthy();
+
+      // output unique error names to a snapshot
+      expect([
+        ...new Set(data.results[0].warnings.map(({ rule }) => rule)),
+      ]).toMatchSnapshot();
 
       done();
     });

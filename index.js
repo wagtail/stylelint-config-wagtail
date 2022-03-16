@@ -3,7 +3,7 @@ module.exports = {
     'stylelint-config-recommended-scss',
     'stylelint-config-prettier-scss',
   ],
-  plugins: ['stylelint-declaration-strict-value'],
+  plugins: ['stylelint-declaration-strict-value', 'stylelint-order'],
   rules: {
     'block-no-empty': true,
     'color-hex-length': 'short',
@@ -33,6 +33,14 @@ module.exports = {
     'max-nesting-depth': 3,
     'media-feature-name-no-unknown': true,
     'no-empty-source': true,
+    // Mixins should always be first in declarations
+    'order/order': [
+      {
+        name: 'include',
+        type: 'at-rule',
+      },
+      'declarations',
+    ],
     'property-disallowed-list': [
       // Disallow positioning with physical properties. Use logical ones instead.
       '/left/',

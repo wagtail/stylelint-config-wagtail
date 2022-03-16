@@ -22,6 +22,7 @@ $font--m: 1rem;
 }
 
 .logo {
+    @include optionalItem();
     display: block;
     /* stylelint-disable-next-line scale-unlimited/declaration-strict-value */
     color: #aaa;

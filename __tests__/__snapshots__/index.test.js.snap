@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flags warnings with invalid css did error 1`] = `
+Array [
+  "order/order",
+  "scale-unlimited/declaration-strict-value",
+  "scss/at-rule-no-unknown",
+  "scss/comment-no-empty",
+  "block-no-empty",
+  "color-named",
+  "comment-no-empty",
+  "declaration-block-no-duplicate-properties",
+  "declaration-property-value-allowed-list",
+  "declaration-property-value-disallowed-list",
+  "length-zero-no-unit",
+  "max-nesting-depth",
+  "property-disallowed-list",
+  "rule-empty-line-before",
+  "selector-max-id",
+  "unit-no-unknown",
+]
+`;

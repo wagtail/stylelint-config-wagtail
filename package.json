@@ -32,7 +32,8 @@
   "dependencies": {
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-recommended-scss": "^5.0.2",
-    "stylelint-declaration-strict-value": "^1.8.0"
+    "stylelint-declaration-strict-value": "^1.8.0",
+    "stylelint-order": "^5.0.0"
   },
   "devDependencies": {
     "@wagtail/eslint-config-wagtail": "^0.4.0",
@@ -41,11 +42,11 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.4.0",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",
-    "stylelint": "^14.3.0"
+    "stylelint": "^14.6.1"
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",
