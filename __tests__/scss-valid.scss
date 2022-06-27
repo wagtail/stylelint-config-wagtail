@@ -42,3 +42,16 @@ $font--m: 1rem;
         color: $color-white;
     }
 }
+
+/* scss/selector-no-union-class-name - valid example */
+.w-header {
+    .w-header__subtitle {
+        background-color: currentColor;
+    }
+
+    &:before {
+        // this should be allowed
+        content: '';
+        display: block;
+    }
+}
