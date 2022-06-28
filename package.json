@@ -54,6 +54,7 @@
     "lint:js": "eslint ./ --max-warnings 0",
     "lint": "npm run lint:format && npm run lint:js",
     "preflight": "npm run format && npm run lint && npm run test",
+    "print-config": "stylelint --print-config .stylelintrc",
     "test": "jest"
   },
   "prettier": {
