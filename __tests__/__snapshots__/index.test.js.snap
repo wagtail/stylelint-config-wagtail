@@ -17,6 +17,7 @@ Array [
   "max-nesting-depth",
   "property-disallowed-list",
   "rule-empty-line-before",
+  "selector-class-pattern",
   "selector-max-combinators",
   "selector-max-id",
   "selector-max-specificity",
