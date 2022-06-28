@@ -17,7 +17,9 @@ Array [
   "max-nesting-depth",
   "property-disallowed-list",
   "rule-empty-line-before",
+  "selector-max-combinators",
   "selector-max-id",
+  "selector-max-specificity",
   "unit-no-unknown",
 ]
 `;
