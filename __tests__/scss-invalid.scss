@@ -90,4 +90,14 @@
     &__subtitle {
         background-color: currentColor;
     }
+
+    /* selector-max-specificity */
+    > div ~ div:first-child:not(:last-child):hover:focus:before {
+        border: none;
+    }
+
+    /* selector-max-combinators */
+    .button > .active + .primary ~ div span {
+        background: none;
+    }
 }
