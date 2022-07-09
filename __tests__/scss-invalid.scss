@@ -83,3 +83,11 @@
     text-align: right;
     @include optionalItem; // should not be at the bottom
 }
+
+/* scss/selector-no-union-class-name */
+
+.w-header {
+    &__subtitle {
+        background-color: currentColor;
+    }
+}

@@ -88,6 +88,7 @@ module.exports = {
       { ignore: ['keywords'] },
     ],
     'scss/selector-no-redundant-nesting-selector': true,
+    'scss/selector-no-union-class-name': true,
     'selector-max-id': 0,
     'selector-no-qualifying-type': [true, { ignore: ['attribute', 'class'] }],
     'selector-pseudo-element-no-unknown': true,

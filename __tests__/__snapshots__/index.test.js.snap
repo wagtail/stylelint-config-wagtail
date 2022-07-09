@@ -4,6 +4,7 @@ exports[`flags warnings with invalid css did error 1`] = `
 Array [
   "order/order",
   "scale-unlimited/declaration-strict-value",
+  "scss/selector-no-union-class-name",
   "scss/at-rule-no-unknown",
   "scss/comment-no-empty",
   "block-no-empty",
