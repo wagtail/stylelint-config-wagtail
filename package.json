@@ -31,22 +31,22 @@
   },
   "dependencies": {
     "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-declaration-strict-value": "^1.8.0",
     "stylelint-order": "^5.0.0"
   },
   "devDependencies": {
     "@wagtail/eslint-config-wagtail": "^0.4.0",
-    "eslint": "^8.2.0",
-    "eslint-config-airbnb": "^19.0.2",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "jest": "^27.4.7",
-    "prettier": "^2.5.1",
-    "stylelint": "^14.6.1"
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.9.1"
   },
   "scripts": {
     "format": "prettier --write '**/*.{js,md,css,scss,yaml,yml,json}'",

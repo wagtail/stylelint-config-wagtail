@@ -10,6 +10,6 @@
   "rules": {},
   "settings": {
     // Manually set the version to disable automated detection of the "react" dependency.
-    "react": { "version": "latest" }
+    "react": { "version": "detect" }
   }
 }
