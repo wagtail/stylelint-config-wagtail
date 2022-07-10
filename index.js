@@ -88,7 +88,21 @@ module.exports = {
       { ignore: ['keywords'] },
     ],
     'scss/selector-no-redundant-nesting-selector': true,
+    'scss/selector-no-union-class-name': true,
+    'selector-class-pattern': [
+      // Loose pattern for hyphenated BEM. This also allows simple words to be used as class names, .e.g. `.active`, `.button`.
+      // Based on:
+      // - https://github.com/postcss/postcss-bem-linter/issues/89#issuecomment-255482072
+      // - https://gist.github.com/Potherca/f2a65491e63338659c3a0d2b07eee382
+      // - https://github.com/torchbox/stylelint-config-torchbox/blob/2d1dffc2d6af49d1327e66daf51d520dd50c5fdc/config.js#L22-L31
+      // See also: https://github.com/simonsmith/stylelint-selector-bem-pattern.
+      // Proceed with caution if reviewing this – and use https://regexr.com/
+      /^[a-z]+[0-9]{0,2}(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$/,
+      { resolveNestedSelectors: true },
+    ],
+    'selector-max-combinators': 3,
     'selector-max-id': 0,
+    'selector-max-specificity': '0,3,3',
     'selector-no-qualifying-type': [true, { ignore: ['attribute', 'class'] }],
     'selector-pseudo-element-no-unknown': true,
     'selector-type-no-unknown': true,

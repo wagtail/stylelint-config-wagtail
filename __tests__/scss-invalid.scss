@@ -83,3 +83,28 @@
     text-align: right;
     @include optionalItem; // should not be at the bottom
 }
+
+/* scss/selector-no-union-class-name */
+
+.w-header {
+    &__subtitle {
+        background-color: currentColor;
+    }
+
+    /* selector-max-specificity */
+    > div ~ div:first-child:not(:last-child):hover:focus:before {
+        border: none;
+    }
+
+    /* selector-max-combinators */
+    .button > .active + .primary ~ div span {
+        background: none;
+    }
+}
+
+/* selector-class-pattern (BEM classes only) */
+.c-page-explorer__item__action--small {
+    &:hover {
+        border-color: transparent;
+    }
+}
