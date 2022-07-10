@@ -73,7 +73,7 @@ Our default export contains all of our Stylelint rules, along with specific plug
 | [`no-duplicate-selectors`][26]                               | Enabled                                                             |
 | [`no-empty-source`][27]                                      | Enabled                                                             |
 | [`no-invalid-double-slash-comments`][28]                     | Enabled                                                             |
-| [`no-invalid-position-at-import-rule`][29]                   | `{"ignoreAtRules":["use"]}`                                         |
+| [`no-invalid-position-at-import-rule`][29]                   | `{"ignoreAtRules":["use","forward"]}`                               |
 | [`no-irregular-whitespace`][30]                              | Enabled                                                             |
 | [`order/order`][31]                                          | `[{"name":"include","type":"at-rule"},"declarations"]`              |
 | [`property-disallowed-list`][32]                             | `["/left/","/right/","text-transform"]`                             |
@@ -95,14 +95,18 @@ Our default export contains all of our Stylelint rules, along with specific plug
 | [`scss/no-duplicate-mixins`][48]                             | Enabled                                                             |
 | [`scss/no-global-function-names`][49]                        | Enabled                                                             |
 | [`scss/selector-no-redundant-nesting-selector`][50]          | Enabled                                                             |
-| [`selector-max-id`][51]                                      | `0`                                                                 |
-| [`selector-no-qualifying-type`][52]                          | `{"ignore":["attribute","class"]}`                                  |
-| [`selector-pseudo-class-no-unknown`][53]                     | Enabled                                                             |
-| [`selector-pseudo-element-no-unknown`][54]                   | Enabled                                                             |
-| [`selector-type-no-unknown`][55]                             | Enabled                                                             |
-| [`string-no-newline`][56]                                    | Enabled                                                             |
-| [`unit-no-unknown`][57]                                      | Enabled                                                             |
-| [`value-no-vendor-prefix`][58]                               | Enabled                                                             |
+| [`scss/selector-no-union-class-name`][51]                    | Enabled                                                             |
+| [`selector-class-pattern`][52]                               | `{}, {"resolveNestedSelectors":true}`                               |
+| [`selector-max-combinators`][53]                             | `3`                                                                 |
+| [`selector-max-id`][54]                                      | `0`                                                                 |
+| [`selector-max-specificity`][55]                             | `"0,3,3"`                                                           |
+| [`selector-no-qualifying-type`][56]                          | `{"ignore":["attribute","class"]}`                                  |
+| [`selector-pseudo-class-no-unknown`][57]                     | Enabled                                                             |
+| [`selector-pseudo-element-no-unknown`][58]                   | Enabled                                                             |
+| [`selector-type-no-unknown`][59]                             | Enabled                                                             |
+| [`string-no-newline`][60]                                    | Enabled                                                             |
+| [`unit-no-unknown`][61]                                      | Enabled                                                             |
+| [`value-no-vendor-prefix`][62]                               | Enabled                                                             |
 
 [config]: https://github.com/wagtail/stylelint-config-wagtail/blob/main/index.js
 [0]: https://stylelint.io/user-guide/rules/list/block-no-empty/
@@ -156,11 +160,15 @@ Our default export contains all of our Stylelint rules, along with specific plug
 [48]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-duplicate-mixins/README.md
 [49]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-global-function-names/README.md
 [50]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md
-[51]: https://stylelint.io/user-guide/rules/list/selector-max-id/
-[52]: https://stylelint.io/user-guide/rules/list/selector-no-qualifying-type/
-[53]: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown/
-[54]: https://stylelint.io/user-guide/rules/list/selector-pseudo-element-no-unknown/
-[55]: https://stylelint.io/user-guide/rules/list/selector-type-no-unknown/
-[56]: https://stylelint.io/user-guide/rules/list/string-no-newline/
-[57]: https://stylelint.io/user-guide/rules/list/unit-no-unknown/
-[58]: https://stylelint.io/user-guide/rules/list/value-no-vendor-prefix/
+[51]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-union-class-name/README.md
+[52]: https://stylelint.io/user-guide/rules/list/selector-class-pattern/
+[53]: https://stylelint.io/user-guide/rules/list/selector-max-combinators/
+[54]: https://stylelint.io/user-guide/rules/list/selector-max-id/
+[55]: https://stylelint.io/user-guide/rules/list/selector-max-specificity/
+[56]: https://stylelint.io/user-guide/rules/list/selector-no-qualifying-type/
+[57]: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown/
+[58]: https://stylelint.io/user-guide/rules/list/selector-pseudo-element-no-unknown/
+[59]: https://stylelint.io/user-guide/rules/list/selector-type-no-unknown/
+[60]: https://stylelint.io/user-guide/rules/list/string-no-newline/
+[61]: https://stylelint.io/user-guide/rules/list/unit-no-unknown/
+[62]: https://stylelint.io/user-guide/rules/list/value-no-vendor-prefix/
