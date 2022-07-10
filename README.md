@@ -2,7 +2,7 @@
 
 [![@wagtail/stylelint-config-wagtail on npm](https://img.shields.io/npm/v/@wagtail/stylelint-config-wagtail.svg)](https://www.npmjs.com/package/@wagtail/stylelint-config-wagtail)
 
-> Shareable stylelint config for CSS and SCSS, following Wagtail’s code style.
+> Shareable stylelint config for CSS and SCSS, following [Wagtail’s code style](https://docs.wagtail.org/en/latest/contributing/ui_guidelines.html).
 
 ## Usage
 
