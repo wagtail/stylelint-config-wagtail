@@ -96,17 +96,18 @@ Our default export contains all of our Stylelint rules, along with specific plug
 | [`scss/no-global-function-names`][49]                        | Enabled                                                             |
 | [`scss/selector-no-redundant-nesting-selector`][50]          | Enabled                                                             |
 | [`scss/selector-no-union-class-name`][51]                    | Enabled                                                             |
-| [`selector-class-pattern`][52]                               | `{}, {"resolveNestedSelectors":true}`                               |
-| [`selector-max-combinators`][53]                             | `3`                                                                 |
-| [`selector-max-id`][54]                                      | `0`                                                                 |
-| [`selector-max-specificity`][55]                             | `"0,3,3"`                                                           |
-| [`selector-no-qualifying-type`][56]                          | `{"ignore":["attribute","class"]}`                                  |
-| [`selector-pseudo-class-no-unknown`][57]                     | Enabled                                                             |
-| [`selector-pseudo-element-no-unknown`][58]                   | Enabled                                                             |
-| [`selector-type-no-unknown`][59]                             | Enabled                                                             |
-| [`string-no-newline`][60]                                    | Enabled                                                             |
-| [`unit-no-unknown`][61]                                      | Enabled                                                             |
-| [`value-no-vendor-prefix`][62]                               | Enabled                                                             |
+| [`selector-attribute-name-disallowed-list`][52]              | `"/^data-/"`                                                        |
+| [`selector-class-pattern`][53]                               | `{}, {"resolveNestedSelectors":true}`                               |
+| [`selector-max-combinators`][54]                             | `3`                                                                 |
+| [`selector-max-id`][55]                                      | `0`                                                                 |
+| [`selector-max-specificity`][56]                             | `"0,3,3"`                                                           |
+| [`selector-no-qualifying-type`][57]                          | `{"ignore":["attribute","class"]}`                                  |
+| [`selector-pseudo-class-no-unknown`][58]                     | Enabled                                                             |
+| [`selector-pseudo-element-no-unknown`][59]                   | Enabled                                                             |
+| [`selector-type-no-unknown`][60]                             | Enabled                                                             |
+| [`string-no-newline`][61]                                    | Enabled                                                             |
+| [`unit-no-unknown`][62]                                      | Enabled                                                             |
+| [`value-no-vendor-prefix`][63]                               | Enabled                                                             |
 
 [config]: https://github.com/wagtail/stylelint-config-wagtail/blob/main/index.js
 [0]: https://stylelint.io/user-guide/rules/list/block-no-empty/
@@ -161,14 +162,15 @@ Our default export contains all of our Stylelint rules, along with specific plug
 [49]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-global-function-names/README.md
 [50]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md
 [51]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-union-class-name/README.md
-[52]: https://stylelint.io/user-guide/rules/list/selector-class-pattern/
-[53]: https://stylelint.io/user-guide/rules/list/selector-max-combinators/
-[54]: https://stylelint.io/user-guide/rules/list/selector-max-id/
-[55]: https://stylelint.io/user-guide/rules/list/selector-max-specificity/
-[56]: https://stylelint.io/user-guide/rules/list/selector-no-qualifying-type/
-[57]: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown/
-[58]: https://stylelint.io/user-guide/rules/list/selector-pseudo-element-no-unknown/
-[59]: https://stylelint.io/user-guide/rules/list/selector-type-no-unknown/
-[60]: https://stylelint.io/user-guide/rules/list/string-no-newline/
-[61]: https://stylelint.io/user-guide/rules/list/unit-no-unknown/
-[62]: https://stylelint.io/user-guide/rules/list/value-no-vendor-prefix/
+[52]: https://stylelint.io/user-guide/rules/list/selector-attribute-name-disallowed-list/
+[53]: https://stylelint.io/user-guide/rules/list/selector-class-pattern/
+[54]: https://stylelint.io/user-guide/rules/list/selector-max-combinators/
+[55]: https://stylelint.io/user-guide/rules/list/selector-max-id/
+[56]: https://stylelint.io/user-guide/rules/list/selector-max-specificity/
+[57]: https://stylelint.io/user-guide/rules/list/selector-no-qualifying-type/
+[58]: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown/
+[59]: https://stylelint.io/user-guide/rules/list/selector-pseudo-element-no-unknown/
+[60]: https://stylelint.io/user-guide/rules/list/selector-type-no-unknown/
+[61]: https://stylelint.io/user-guide/rules/list/string-no-newline/
+[62]: https://stylelint.io/user-guide/rules/list/unit-no-unknown/
+[63]: https://stylelint.io/user-guide/rules/list/value-no-vendor-prefix/

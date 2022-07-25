@@ -72,3 +72,7 @@ $font--m: 1rem;
 .a-column {
     display: flex;
 }
+
+[class*='foo'] {
+    display: inline;
+}
