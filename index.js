@@ -111,6 +111,7 @@ module.exports = {
     ],
     'scss/selector-no-redundant-nesting-selector': true,
     'scss/selector-no-union-class-name': true,
+    'selector-attribute-name-disallowed-list': '/^data-/',
     'selector-class-pattern': [
       // Loose pattern for hyphenated BEM. This also allows simple words to be used as class names, .e.g. `.active`, `.button`.
       // Based on:

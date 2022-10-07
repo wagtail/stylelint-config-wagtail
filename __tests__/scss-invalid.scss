@@ -108,3 +108,8 @@
         border-color: transparent;
     }
 }
+
+/* selector-attribute-name-disallowed-list */
+[data-foo*='bar'] {
+    border: none;
+}
