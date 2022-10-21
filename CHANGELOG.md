@@ -7,12 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.6.0) - 2022-10-21
+
+### Added
+
+- Enforce mixin usage `@include ...` being used at the top of any declaration blocks. ([#17](https://github.com/wagtail/stylelint-config-wagtail/pull/17), [#14](https://github.com/wagtail/stylelint-config-wagtail/issues/14)).
+- Enforce `scss/selector-no-union-class-name` rule ([#23](https://github.com/wagtail/stylelint-config-wagtail/pull/23), [#20](https://github.com/wagtail/stylelint-config-wagtail/issues/20)).
+- Enforce basic BEM usage with `selector-class-pattern` ([#26](https://github.com/wagtail/stylelint-config-wagtail/pull/26), [#19](https://github.com/wagtail/stylelint-config-wagtail/issues/19)).
+- Enforce `selector-max-combinators` and `selector-max-specificity` ([#24](https://github.com/wagtail/stylelint-config-wagtail/pull/24), [#21](https://github.com/wagtail/stylelint-config-wagtail/issues/21)).
+- Block data- attributes selectors with `selector-attribute-name-disallowed-list` ([#30](https://github.com/wagtail/stylelint-config-wagtail/pull/30), [#28](https://github.com/wagtail/stylelint-config-wagtail/issues/28)).
+
+### Changed
+
+- Upgrade to latest `stylelint-config-recommended-scss` ([#22](https://github.com/wagtail/stylelint-config-wagtail/pull/22)).
+- Allow system colors and `unset` in `declaration-strict-value` ([#29](https://github.com/wagtail/stylelint-config-wagtail/pull/29), [wagtail#8824](https://github.com/wagtail/wagtail/pull/8824)).
+
 ## [0.5.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.5.0) - 2022-03-15
 
 ### Added
 
 - Add linting rule to block `text-transform`, see [wagtail#7624](https://github.com/wagtail/wagtail/issues/7624) for the reasoning behind this change ([#16](https://github.com/wagtail/stylelint-config-wagtail/pull/16)).
-- Enforce mixin usage `@include ...` being used at the top of any declaration blocks.
 
 ## [0.4.1](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.4.1) - 2022-02-28
 
