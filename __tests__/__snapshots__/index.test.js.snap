@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`flags warnings with invalid css did error 1`] = `
-Array [
+[
   "order/order",
   "scale-unlimited/declaration-strict-value",
   "scss/selector-no-union-class-name",
