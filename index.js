@@ -42,6 +42,8 @@ module.exports = {
       'declarations',
     ],
     'property-disallowed-list': [
+      // There are very few cases where it’s the correct approach.
+      '/forced-color-adjust/',
       // Disallow positioning with physical properties. Use logical ones instead.
       '/left/',
       '/right/',
