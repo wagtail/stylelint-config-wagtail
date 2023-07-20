@@ -63,51 +63,53 @@ Our default export contains all of our Stylelint rules, along with specific plug
 | [`function-calc-no-unspaced-operator`][16]                   | Enabled                                                             |
 | [`function-linear-gradient-no-nonstandard-direction`][17]    | Enabled                                                             |
 | [`function-url-quotes`][18]                                  | `"always"`                                                          |
-| [`keyframe-declaration-no-important`][19]                    | Enabled                                                             |
-| [`length-zero-no-unit`][20]                                  | Enabled                                                             |
-| [`max-nesting-depth`][21]                                    | `3`                                                                 |
-| [`media-feature-name-no-unknown`][22]                        | Enabled                                                             |
-| [`named-grid-areas-no-invalid`][23]                          | Enabled                                                             |
-| [`no-descending-specificity`][24]                            | Enabled                                                             |
-| [`no-duplicate-at-import-rules`][25]                         | Enabled                                                             |
-| [`no-duplicate-selectors`][26]                               | Enabled                                                             |
-| [`no-empty-source`][27]                                      | Enabled                                                             |
-| [`no-invalid-double-slash-comments`][28]                     | Enabled                                                             |
-| [`no-invalid-position-at-import-rule`][29]                   | `{"ignoreAtRules":["use","forward"]}`                               |
-| [`no-irregular-whitespace`][30]                              | Enabled                                                             |
-| [`order/order`][31]                                          | `[{"name":"include","type":"at-rule"},"declarations"]`              |
-| [`property-disallowed-list`][32]                             | `["/left/","/right/","text-transform"]`                             |
-| [`property-no-unknown`][33]                                  | Enabled                                                             |
-| [`property-no-vendor-prefix`][34]                            | Enabled                                                             |
-| [`rule-empty-line-before`][35]                               | `"always", {"except":["after-single-line-comment","first-nested"]}` |
-| [`scale-unlimited/declaration-strict-value`][36]             | Enabled - [see Config][config]                                      |
-| [`scss/at-extend-no-missing-placeholder`][37]                | Enabled                                                             |
-| [`scss/at-if-no-null`][38]                                   | Enabled                                                             |
-| [`scss/at-import-no-partial-leading-underscore`][39]         | Enabled                                                             |
-| [`scss/at-import-partial-extension-blacklist`][40]           | `"scss"`                                                            |
-| [`scss/at-rule-no-unknown`][41]                              | Enabled                                                             |
-| [`scss/comment-no-empty`][42]                                | Enabled                                                             |
-| [`scss/declaration-nested-properties-no-divided-groups`][43] | Enabled                                                             |
-| [`scss/dollar-variable-no-missing-interpolation`][44]        | Enabled                                                             |
-| [`scss/function-quote-no-quoted-strings-inside`][45]         | Enabled                                                             |
-| [`scss/function-unquote-no-unquoted-strings-inside`][46]     | Enabled                                                             |
-| [`scss/media-feature-value-dollar-variable`][47]             | `"always", {"ignore":["keywords"]}`                                 |
-| [`scss/no-duplicate-mixins`][48]                             | Enabled                                                             |
-| [`scss/no-global-function-names`][49]                        | Enabled                                                             |
-| [`scss/selector-no-redundant-nesting-selector`][50]          | Enabled                                                             |
-| [`scss/selector-no-union-class-name`][51]                    | Enabled                                                             |
-| [`selector-attribute-name-disallowed-list`][52]              | `"/^data-/"`                                                        |
-| [`selector-class-pattern`][53]                               | `{}, {"resolveNestedSelectors":true}`                               |
-| [`selector-max-combinators`][54]                             | `3`                                                                 |
-| [`selector-max-id`][55]                                      | `0`                                                                 |
-| [`selector-max-specificity`][56]                             | `"0,3,3"`                                                           |
-| [`selector-no-qualifying-type`][57]                          | `{"ignore":["attribute","class"]}`                                  |
-| [`selector-pseudo-class-no-unknown`][58]                     | Enabled                                                             |
-| [`selector-pseudo-element-no-unknown`][59]                   | Enabled                                                             |
-| [`selector-type-no-unknown`][60]                             | Enabled                                                             |
-| [`string-no-newline`][61]                                    | Enabled                                                             |
-| [`unit-no-unknown`][62]                                      | Enabled                                                             |
-| [`value-no-vendor-prefix`][63]                               | Enabled                                                             |
+| [`keyframe-block-no-duplicate-selectors`][19]                | Enabled                                                             |
+| [`keyframe-declaration-no-important`][20]                    | Enabled                                                             |
+| [`length-zero-no-unit`][21]                                  | Enabled                                                             |
+| [`max-nesting-depth`][22]                                    | `3`                                                                 |
+| [`media-feature-name-no-unknown`][23]                        | Enabled                                                             |
+| [`named-grid-areas-no-invalid`][24]                          | Enabled                                                             |
+| [`no-descending-specificity`][25]                            | Enabled                                                             |
+| [`no-duplicate-at-import-rules`][26]                         | Enabled                                                             |
+| [`no-duplicate-selectors`][27]                               | Enabled                                                             |
+| [`no-empty-source`][28]                                      | Enabled                                                             |
+| [`no-invalid-double-slash-comments`][29]                     | Enabled                                                             |
+| [`no-invalid-position-at-import-rule`][30]                   | `{"ignoreAtRules":["use","forward"]}`                               |
+| [`no-irregular-whitespace`][31]                              | Enabled                                                             |
+| [`order/order`][32]                                          | `[{"name":"include","type":"at-rule"},"declarations"]`              |
+| [`property-disallowed-list`][33]                             | `["/left/","/right/","text-transform"]`                             |
+| [`property-no-unknown`][34]                                  | Enabled                                                             |
+| [`property-no-vendor-prefix`][35]                            | Enabled                                                             |
+| [`rule-empty-line-before`][36]                               | `"always", {"except":["after-single-line-comment","first-nested"]}` |
+| [`scale-unlimited/declaration-strict-value`][37]             | Enabled - [see Config][config]                                      |
+| [`scss/at-extend-no-missing-placeholder`][38]                | Enabled                                                             |
+| [`scss/at-if-no-null`][39]                                   | Enabled                                                             |
+| [`scss/at-import-no-partial-leading-underscore`][40]         | Enabled                                                             |
+| [`scss/at-import-partial-extension-blacklist`][41]           | `"scss"`                                                            |
+| [`scss/at-rule-no-unknown`][42]                              | Enabled                                                             |
+| [`scss/comment-no-empty`][43]                                | Enabled                                                             |
+| [`scss/declaration-nested-properties-no-divided-groups`][44] | Enabled                                                             |
+| [`scss/dollar-variable-no-missing-interpolation`][45]        | Enabled                                                             |
+| [`scss/function-quote-no-quoted-strings-inside`][46]         | Enabled                                                             |
+| [`scss/function-unquote-no-unquoted-strings-inside`][47]     | Enabled                                                             |
+| [`scss/media-feature-value-dollar-variable`][48]             | `"always", {"ignore":["keywords"]}`                                 |
+| [`scss/no-duplicate-mixins`][49]                             | Enabled                                                             |
+| [`scss/no-global-function-names`][50]                        | Enabled                                                             |
+| [`scss/selector-no-redundant-nesting-selector`][51]          | Enabled                                                             |
+| [`scss/selector-no-union-class-name`][52]                    | Enabled                                                             |
+| [`selector-anb-no-unmatchable`][53]                          | Enabled                                                             |
+| [`selector-attribute-name-disallowed-list`][54]              | `"/^data-/"`                                                        |
+| [`selector-class-pattern`][55]                               | `{}, {"resolveNestedSelectors":true}`                               |
+| [`selector-max-combinators`][56]                             | `3`                                                                 |
+| [`selector-max-id`][57]                                      | `0`                                                                 |
+| [`selector-max-specificity`][58]                             | `"0,3,3"`                                                           |
+| [`selector-no-qualifying-type`][59]                          | `{"ignore":["attribute","class"]}`                                  |
+| [`selector-pseudo-class-no-unknown`][60]                     | Enabled                                                             |
+| [`selector-pseudo-element-no-unknown`][61]                   | Enabled                                                             |
+| [`selector-type-no-unknown`][62]                             | Enabled                                                             |
+| [`string-no-newline`][63]                                    | Enabled                                                             |
+| [`unit-no-unknown`][64]                                      | Enabled                                                             |
+| [`value-no-vendor-prefix`][65]                               | Enabled                                                             |
 
 [config]: https://github.com/wagtail/stylelint-config-wagtail/blob/main/index.js
 [0]: https://stylelint.io/user-guide/rules/list/block-no-empty/
@@ -129,48 +131,50 @@ Our default export contains all of our Stylelint rules, along with specific plug
 [16]: https://stylelint.io/user-guide/rules/list/function-calc-no-unspaced-operator/
 [17]: https://stylelint.io/user-guide/rules/list/function-linear-gradient-no-nonstandard-direction/
 [18]: https://stylelint.io/user-guide/rules/list/function-url-quotes/
-[19]: https://stylelint.io/user-guide/rules/list/keyframe-declaration-no-important/
-[20]: https://stylelint.io/user-guide/rules/list/length-zero-no-unit/
-[21]: https://stylelint.io/user-guide/rules/list/max-nesting-depth/
-[22]: https://stylelint.io/user-guide/rules/list/media-feature-name-no-unknown/
-[23]: https://stylelint.io/user-guide/rules/list/named-grid-areas-no-invalid/
-[24]: https://stylelint.io/user-guide/rules/list/no-descending-specificity/
-[25]: https://stylelint.io/user-guide/rules/list/no-duplicate-at-import-rules/
-[26]: https://stylelint.io/user-guide/rules/list/no-duplicate-selectors/
-[27]: https://stylelint.io/user-guide/rules/list/no-empty-source/
-[28]: https://stylelint.io/user-guide/rules/list/no-invalid-double-slash-comments/
-[29]: https://stylelint.io/user-guide/rules/list/no-invalid-position-at-import-rule/
-[30]: https://stylelint.io/user-guide/rules/list/no-irregular-whitespace/
-[31]: https://github.com/hudochenkov/stylelint-order/blob/master/rules/order/README.md
-[32]: https://stylelint.io/user-guide/rules/list/property-disallowed-list/
-[33]: https://stylelint.io/user-guide/rules/list/property-no-unknown/
-[34]: https://stylelint.io/user-guide/rules/list/property-no-vendor-prefix/
-[35]: https://stylelint.io/user-guide/rules/list/rule-empty-line-before/
-[36]: https://github.com/AndyOGo/stylelint-declaration-strict-value
-[37]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md
-[38]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-if-no-null/README.md
-[39]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-import-no-partial-leading-underscore/README.md
-[40]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md
-[41]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-rule-no-unknown/README.md
-[42]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/comment-no-empty/README.md
-[43]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/declaration-nested-properties-no-divided-groups/README.md
-[44]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-no-missing-interpolation/README.md
-[45]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-quote-no-quoted-strings-inside/README.md
-[46]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-unquote-no-unquoted-strings-inside/README.md
-[47]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/media-feature-value-dollar-variable/README.md
-[48]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-duplicate-mixins/README.md
-[49]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-global-function-names/README.md
-[50]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md
-[51]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-union-class-name/README.md
-[52]: https://stylelint.io/user-guide/rules/list/selector-attribute-name-disallowed-list/
-[53]: https://stylelint.io/user-guide/rules/list/selector-class-pattern/
-[54]: https://stylelint.io/user-guide/rules/list/selector-max-combinators/
-[55]: https://stylelint.io/user-guide/rules/list/selector-max-id/
-[56]: https://stylelint.io/user-guide/rules/list/selector-max-specificity/
-[57]: https://stylelint.io/user-guide/rules/list/selector-no-qualifying-type/
-[58]: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown/
-[59]: https://stylelint.io/user-guide/rules/list/selector-pseudo-element-no-unknown/
-[60]: https://stylelint.io/user-guide/rules/list/selector-type-no-unknown/
-[61]: https://stylelint.io/user-guide/rules/list/string-no-newline/
-[62]: https://stylelint.io/user-guide/rules/list/unit-no-unknown/
-[63]: https://stylelint.io/user-guide/rules/list/value-no-vendor-prefix/
+[19]: https://stylelint.io/user-guide/rules/list/keyframe-block-no-duplicate-selectors/
+[20]: https://stylelint.io/user-guide/rules/list/keyframe-declaration-no-important/
+[21]: https://stylelint.io/user-guide/rules/list/length-zero-no-unit/
+[22]: https://stylelint.io/user-guide/rules/list/max-nesting-depth/
+[23]: https://stylelint.io/user-guide/rules/list/media-feature-name-no-unknown/
+[24]: https://stylelint.io/user-guide/rules/list/named-grid-areas-no-invalid/
+[25]: https://stylelint.io/user-guide/rules/list/no-descending-specificity/
+[26]: https://stylelint.io/user-guide/rules/list/no-duplicate-at-import-rules/
+[27]: https://stylelint.io/user-guide/rules/list/no-duplicate-selectors/
+[28]: https://stylelint.io/user-guide/rules/list/no-empty-source/
+[29]: https://stylelint.io/user-guide/rules/list/no-invalid-double-slash-comments/
+[30]: https://stylelint.io/user-guide/rules/list/no-invalid-position-at-import-rule/
+[31]: https://stylelint.io/user-guide/rules/list/no-irregular-whitespace/
+[32]: https://github.com/hudochenkov/stylelint-order/blob/master/rules/order/README.md
+[33]: https://stylelint.io/user-guide/rules/list/property-disallowed-list/
+[34]: https://stylelint.io/user-guide/rules/list/property-no-unknown/
+[35]: https://stylelint.io/user-guide/rules/list/property-no-vendor-prefix/
+[36]: https://stylelint.io/user-guide/rules/list/rule-empty-line-before/
+[37]: https://github.com/AndyOGo/stylelint-declaration-strict-value
+[38]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md
+[39]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-if-no-null/README.md
+[40]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-import-no-partial-leading-underscore/README.md
+[41]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md
+[42]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-rule-no-unknown/README.md
+[43]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/comment-no-empty/README.md
+[44]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/declaration-nested-properties-no-divided-groups/README.md
+[45]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-no-missing-interpolation/README.md
+[46]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-quote-no-quoted-strings-inside/README.md
+[47]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-unquote-no-unquoted-strings-inside/README.md
+[48]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/media-feature-value-dollar-variable/README.md
+[49]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-duplicate-mixins/README.md
+[50]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-global-function-names/README.md
+[51]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md
+[52]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-union-class-name/README.md
+[53]: https://stylelint.io/user-guide/rules/list/selector-anb-no-unmatchable/
+[54]: https://stylelint.io/user-guide/rules/list/selector-attribute-name-disallowed-list/
+[55]: https://stylelint.io/user-guide/rules/list/selector-class-pattern/
+[56]: https://stylelint.io/user-guide/rules/list/selector-max-combinators/
+[57]: https://stylelint.io/user-guide/rules/list/selector-max-id/
+[58]: https://stylelint.io/user-guide/rules/list/selector-max-specificity/
+[59]: https://stylelint.io/user-guide/rules/list/selector-no-qualifying-type/
+[60]: https://stylelint.io/user-guide/rules/list/selector-pseudo-class-no-unknown/
+[61]: https://stylelint.io/user-guide/rules/list/selector-pseudo-element-no-unknown/
+[62]: https://stylelint.io/user-guide/rules/list/selector-type-no-unknown/
+[63]: https://stylelint.io/user-guide/rules/list/string-no-newline/
+[64]: https://stylelint.io/user-guide/rules/list/unit-no-unknown/
+[65]: https://stylelint.io/user-guide/rules/list/value-no-vendor-prefix/
