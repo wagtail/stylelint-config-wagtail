@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.7.0) - 2023-07-20
+
+### Added
+
+- Enforce [keyframe-block-no-duplicate-selectors](https://stylelint.io/user-guide/rules/keyframe-block-no-duplicate-selectors/) ([#34](https://github.com/wagtail/stylelint-config-wagtail/pull/34)).
+- Enforce [selector-anb-no-unmatchable](https://stylelint.io/user-guide/rules/selector-anb-no-unmatchable/) ([#34](https://github.com/wagtail/stylelint-config-wagtail/pull/34)).
+- Disallow `forced-color-adjust` ([#32](https://github.com/wagtail/stylelint-config-wagtail/issues/32), [#35](https://github.com/wagtail/stylelint-config-wagtail/pull/35)).
+
+### Changed
+
+- Upgrade to Stylelint 15, and latest versions of `stylelint-config-prettier-scss`, `stylelint-config-recommended-scss`, `stylelint-declaration-strict-value`, `stylelint-order` ([#34](https://github.com/wagtail/stylelint-config-wagtail/pull/34)).
+
 ## [0.6.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.6.0) - 2022-10-21
 
 ### Added
