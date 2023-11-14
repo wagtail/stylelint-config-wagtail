@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.8.0) - 2023-11-14
+
+### Changed
+
+- Upgrade to Stylelint 15.11, and latest version of `stylelint-config-recommended-scss` ([#38](https://github.com/wagtail/stylelint-config-wagtail/pull/38)).
+
 ## [0.7.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/v0.7.0) - 2023-07-20
 
 ### Added
