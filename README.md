@@ -4,6 +4,13 @@
 
 > Shareable stylelint config for CSS and SCSS, following [Wagtail’s code style](https://docs.wagtail.org/en/latest/contributing/ui_guidelines.html).
 
+- [Usage](#usage)
+- [Links](#links)
+- [Contribution Guidelines](#contribution-guidelines)
+  - [Install](#install)
+  - [Development](#development)
+- [Rules](#rules)
+
 ## Usage
 
 Our default export contains all of our Stylelint rules, along with specific plugins for SCSS syntax.
@@ -37,7 +44,7 @@ Our default export contains all of our Stylelint rules, along with specific plug
 - Run preflight checks before committing final code via `npm run preflight`
 - Note: When working with the rule set, only modify the `index.js` file, not the `.eslintrc` file as it is for local linting only
 
-### Rules
+## Rules
 
 <!-- AUTO GENERATED - run `npm run write-rules` to update - do not modify manually -->
 <!-- RULES:START -->
