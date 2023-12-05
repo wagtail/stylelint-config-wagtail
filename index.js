@@ -35,10 +35,9 @@ module.exports = {
     'no-empty-source': true,
     // Mixins should always be first in declarations
     'order/order': [
-      {
-        name: 'include',
-        type: 'at-rule',
-      },
+      'dollar-variables',
+      'custom-properties',
+      { type: 'at-rule', hasBlock: false }, // @-rules that have no nesting.
       'declarations',
     ],
     'property-disallowed-list': [
