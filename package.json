@@ -45,11 +45,11 @@
     "format": "prettier --cache --write '**/*.{js,md,css,scss,yaml,yml,json}'",
     "lint:format": "prettier --cache --check '**/*.{js,md,css,scss,yaml,yml,json}'",
     "lint:js": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache ./ --max-warnings 0 --report-unused-disable-directives",
-    "lint:readme": "node write-rules.js --check",
+    "lint:readme": "node write-rules.mjs --check",
     "lint": "npm run lint:format && npm run lint:js && npm run lint:readme",
     "preflight": "npm run format && npm run lint && npm run test",
     "test": "node --test",
-    "write-rules": "node write-rules.js",
+    "write-rules": "node write-rules.mjs",
     "print-config": "stylelint --print-config .stylelintrc"
   },
   "prettier": {

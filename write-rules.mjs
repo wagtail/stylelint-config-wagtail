@@ -1,5 +1,6 @@
-const fs = require('node:fs');
-const stylelint = require('stylelint');
+import { readFile, writeFile } from 'node:fs/promises';
+
+import stylelint from 'stylelint';
 
 const COMMENT = '<!-- RULES:START -->';
 const README = 'README.md';
@@ -139,34 +140,36 @@ const writeRules = async () => {
 
   const markdownTable = createMarkdownTable(rules);
 
-  fs.readFile(README, (fileReadError, buf) => {
-    if (fileReadError) throw fileReadError;
+  await readFile(README)
+    .then(async (buf) => {
+      const content = buf.toString();
 
-    const content = buf.toString();
+      const startOfTable = content.indexOf(COMMENT) + COMMENT.length;
 
-    const startOfTable = content.indexOf(COMMENT) + COMMENT.length;
+      const newContent = content
+        .substring(0, startOfTable)
+        .concat(markdownTable);
 
-    const newContent = content.substring(0, startOfTable).concat(markdownTable);
+      // if in check mode, only compare contents and do not write to the file
+      const args = process.argv.slice(2) || [];
+      const isCheck = args.includes('--check');
 
-    // if in check mode, only compare contents and do not write to the file
-    const args = process.argv.slice(2) || [];
-    const isCheck = args.includes('--check');
-
-    if (isCheck) {
-      if (newContent !== content) {
-        process.stderr.write(
-          'Rules have not been written, run `npm run write-rules`\n',
-        );
-        process.exit(1);
+      if (isCheck) {
+        if (newContent !== content) {
+          throw new Error(
+            'Rules have not been written, run `npm run write-rules`',
+          );
+        }
+        process.exit(0);
+      } else {
+        // if not checking - ok to write to the file
+        await writeFile(README, newContent);
       }
-      process.exit(0);
-    } else {
-      // if not checking - ok to write to the file
-      fs.writeFile(README, newContent, (fileWriteError) => {
-        if (fileWriteError) throw fileWriteError;
-      });
-    }
-  });
+    })
+    .catch((error) => {
+      process.stderr.write(error.message + '\n');
+      process.exit(1);
+    });
 };
 
 writeRules();
