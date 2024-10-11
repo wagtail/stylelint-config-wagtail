@@ -105,8 +105,6 @@ module.exports = {
         ],
       },
     ],
-    'scss/at-import-partial-extension': null,
-    'scss/at-import-partial-extension-blacklist': ['scss'],
     'scss/media-feature-value-dollar-variable': [
       'always',
       { ignore: ['keywords'] },
