@@ -48,7 +48,7 @@
     "lint:readme": "node write-rules.js --check",
     "lint": "npm run lint:format && npm run lint:js && npm run lint:readme",
     "preflight": "npm run format && npm run lint && npm run test",
-    "test": "jest",
+    "test": "node --test",
     "write-rules": "node write-rules.js",
     "print-config": "stylelint --print-config .stylelintrc"
   },
