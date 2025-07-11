@@ -1,11 +1,7 @@
 {
   "extends": "@wagtail/eslint-config-wagtail",
   "env": {
-    "node": true,
-    "jest": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 9
+    "node": true
   },
   "rules": {},
   "settings": {

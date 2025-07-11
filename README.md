@@ -91,14 +91,14 @@ Our default export contains all of our Stylelint rules, along with specific plug
 | [`scale-unlimited/declaration-strict-value`][37]             | Enabled - [see Config][config]                                      |
 | [`scss/at-extend-no-missing-placeholder`][38]                | Enabled                                                             |
 | [`scss/at-if-no-null`][39]                                   | Enabled                                                             |
-| [`scss/at-import-partial-extension-blacklist`][40]           | `"scss"`                                                            |
-| [`scss/at-rule-no-unknown`][41]                              | Enabled                                                             |
-| [`scss/comment-no-empty`][42]                                | Enabled                                                             |
-| [`scss/declaration-nested-properties-no-divided-groups`][43] | Enabled                                                             |
-| [`scss/dollar-variable-no-missing-interpolation`][44]        | Enabled                                                             |
-| [`scss/function-quote-no-quoted-strings-inside`][45]         | Enabled                                                             |
-| [`scss/function-unquote-no-unquoted-strings-inside`][46]     | Enabled                                                             |
-| [`scss/load-no-partial-leading-underscore`][47]              | Enabled                                                             |
+| [`scss/at-rule-no-unknown`][40]                              | Enabled                                                             |
+| [`scss/comment-no-empty`][41]                                | Enabled                                                             |
+| [`scss/declaration-nested-properties-no-divided-groups`][42] | Enabled                                                             |
+| [`scss/dollar-variable-no-missing-interpolation`][43]        | Enabled                                                             |
+| [`scss/function-quote-no-quoted-strings-inside`][44]         | Enabled                                                             |
+| [`scss/function-unquote-no-unquoted-strings-inside`][45]     | Enabled                                                             |
+| [`scss/load-no-partial-leading-underscore`][46]              | Enabled                                                             |
+| [`scss/load-partial-extension`][47]                          | `"never"`                                                           |
 | [`scss/media-feature-value-dollar-variable`][48]             | `"always", {"ignore":["keywords"]}`                                 |
 | [`scss/no-duplicate-mixins`][49]                             | Enabled                                                             |
 | [`scss/no-global-function-names`][50]                        | Enabled                                                             |
@@ -159,14 +159,14 @@ Our default export contains all of our Stylelint rules, along with specific plug
 [37]: https://github.com/AndyOGo/stylelint-declaration-strict-value
 [38]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-extend-no-missing-placeholder/README.md
 [39]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-if-no-null/README.md
-[40]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-import-partial-extension-blacklist/README.md
-[41]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-rule-no-unknown/README.md
-[42]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/comment-no-empty/README.md
-[43]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/declaration-nested-properties-no-divided-groups/README.md
-[44]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-no-missing-interpolation/README.md
-[45]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-quote-no-quoted-strings-inside/README.md
-[46]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-unquote-no-unquoted-strings-inside/README.md
-[47]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/load-no-partial-leading-underscore/README.md
+[40]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/at-rule-no-unknown/README.md
+[41]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/comment-no-empty/README.md
+[42]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/declaration-nested-properties-no-divided-groups/README.md
+[43]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/dollar-variable-no-missing-interpolation/README.md
+[44]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-quote-no-quoted-strings-inside/README.md
+[45]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/function-unquote-no-unquoted-strings-inside/README.md
+[46]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/load-no-partial-leading-underscore/README.md
+[47]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/load-partial-extension/README.md
 [48]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/media-feature-value-dollar-variable/README.md
 [49]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-duplicate-mixins/README.md
 [50]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/no-global-function-names/README.md
