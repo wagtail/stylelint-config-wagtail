@@ -83,7 +83,7 @@ Our default export contains all of our Stylelint rules, along with specific plug
 | [`no-invalid-double-slash-comments`][29]                     | Enabled                                                             |
 | [`no-invalid-position-at-import-rule`][30]                   | `{"ignoreAtRules":["use","forward"]}`                               |
 | [`no-irregular-whitespace`][31]                              | Enabled                                                             |
-| [`order/order`][32]                                          | `[{"name":"include","type":"at-rule"},"declarations"]`              |
+| [`order/order`][32]                                          | Enabled - [see Config][config]                                      |
 | [`property-disallowed-list`][33]                             | `["/forced-color-adjust/","/left/","/right/","text-transform"]`     |
 | [`property-no-unknown`][34]                                  | Enabled                                                             |
 | [`property-no-vendor-prefix`][35]                            | Enabled                                                             |
