@@ -41,6 +41,11 @@
   "peerDependencies": {
     "stylelint": ">=16.10.0"
   },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm"
+    }
+  },
   "scripts": {
     "format": "prettier --cache --write '**/*.{js,md,css,scss,yaml,yml,json}'",
     "lint:format": "prettier --cache --check '**/*.{js,md,css,scss,yaml,yml,json}'",
