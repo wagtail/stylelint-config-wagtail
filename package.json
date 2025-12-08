@@ -1,6 +1,6 @@
 {
   "name": "@wagtail/stylelint-config-wagtail",
-  "version": "0.8.0",
+  "version": "1.0.0",
   "description": "Shareable Stylelint config for CSS and SCSS, following Wagtail’s code style",
   "main": "index.js",
   "files": [
