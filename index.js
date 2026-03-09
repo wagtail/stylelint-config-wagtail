@@ -59,7 +59,8 @@ module.exports = {
     'scale-unlimited/declaration-strict-value': [
       [
         // Colors should always be defined from variables or functions.
-        '/color/',
+        'color',
+        '/-color/',
         'fill',
         'stroke',
         // Font tokens should come from our design tokens.
