@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Upgrade to Stylelint 17, and latest version of other config/plugin packages.
+
+#### New rules configuration
+
+| Rule                                                                                                                                     | Purpose                                                                                        | Set to                                                                                                                        | Was set to                                |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [`scss/selector-class-pattern`](https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-class-pattern/README.md) | Replaces `selector-class-pattern`. Require or disallow a specific pattern for class selectors. | `/^[a-z]+[0-9]{0,2}(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$/` with `resolveNestedSelectors: true` | `selector-class-pattern` with same config |
+
+### BREAKING CHANGES
+
+The configuration now mandates stylelint v17. See Stylelint's official [Migrating to 17.0.0](https://stylelint.io/migration-guide/to-17) documentation for more details.
+
+#### Migration notes
+
+- `selector-class-pattern` has been replaced with `scss/selector-class-pattern` because Stylelint 17 removed the `resolveNestedSelectors` option from the core rule. The SCSS plugin provides an equivalent rule with this option.
+- Several rules now behave differently with CSS nesting due to Stylelint 17's changes to standard CSS nesting support:
+  - `selector-max-*` rules no longer desugar nesting
+  - `no-duplicate-selectors` and `selector-no-qualifying-type` now resolve selectors according to standard CSS nesting
+
 ## [1.0.1](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/1.0.1) - 2026-03-09
 
 ### Changed
