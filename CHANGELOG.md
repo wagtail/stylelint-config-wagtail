@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/2.0.0) - 2026-04-23
+
 ### Changed
 
 - Upgrade to Stylelint 17, and latest version of other config/plugin packages.
