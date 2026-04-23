@@ -16,7 +16,7 @@
 Our default export contains all of our Stylelint rules, along with specific plugins for SCSS syntax.
 
 1. Run `npm install stylelint @wagtail/stylelint-config-wagtail --save-dev`
-2. Add `"extends": "@wagtail/stylelint-config-wagtail"` to your `.stylelintrc`
+2. Add `"extends": "@wagtail/stylelint-config-wagtail"` to your Stylelint configuration
 
 ## Links
 
