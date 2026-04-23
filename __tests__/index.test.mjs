@@ -31,7 +31,7 @@ describe('flags warnings with invalid css', () => {
 
     assert.equal(errored, true);
 
-    assert.strictEqual(results[0].warnings.length, 47);
+    assert.strictEqual(results[0].warnings.length, 46);
 
     assert.deepStrictEqual(
       results[0].warnings
@@ -58,10 +58,10 @@ describe('flags warnings with invalid css', () => {
         'scale-unlimited/declaration-strict-value': 9,
         'scss/at-rule-no-unknown': 1,
         'scss/comment-no-empty': 1,
+        'scss/selector-class-pattern': 2,
         'scss/selector-no-union-class-name': 1,
         'selector-attribute-name-disallowed-list': 1,
-        'selector-class-pattern': 2,
-        'selector-max-combinators': 2,
+        'selector-max-combinators': 1,
         'selector-max-id': 1,
         'selector-max-specificity': 5,
         'unit-no-unknown': 1,
