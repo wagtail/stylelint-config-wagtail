@@ -13,36 +13,122 @@
 
 ## Usage
 
-Our default export contains all of our Stylelint rules, along with specific plugins for SCSS syntax.
+Install stylelint, and the config:
 
-1. Run `npm install stylelint @wagtail/stylelint-config-wagtail --save-dev`
-2. Add `"extends": "@wagtail/stylelint-config-wagtail"` to your Stylelint configuration
+```sh
+npm install --save-dev stylelint @wagtail/stylelint-config-wagtail
+```
 
-## Links
+Then [configure stylelint to use this config](https://stylelint.io/user-guide/configuration/#extends). As a `stylelint.config.js` or `stylelint.config.mjs` in the root of your project:
 
-- [Stylelint](https://stylelint.io/)
-- [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss)
-- [stylelint-config-prettier-scss](https://github.com/prettier/stylelint-config-prettier-scss)
+```js
+/** @type {import('stylelint').Config} */
+export default {
+  // See https://github.com/wagtail/stylelint-config-wagtail for rules.
+  extends: '@wagtail/stylelint-config-wagtail',
+};
+```
 
-## Contribution Guidelines
+### Tips
 
-### Install
+#### Linting setup for ongoing projects
 
-- Required [Node](https://nodejs.org)
-- We recommend using [nvm](https://github.com/creationix/nvm)
-- Clone the project on to your computer
-- Run `nvm install` to ensure you have the correct Node version
-- Run `npm install` to install project dependencies
-- Ensure your editor is set up to use [editorconfig](https://editorconfig.org/), [Prettier](https://prettier.io/), [Eslint](https://eslint.org/) and [Stylelint](https://stylelint.io/)
+Review our [CHANGELOG](https://github.com/wagtail/stylelint-config-wagtail/blob/main/CHANGELOG.md) for guidance on how to upgrade a project’s linting to a specific version.
 
-### Development
+More generally, when retrofitting stricter linting onto an existing project, consider [a gradual approach to linting strictness](https://thib.me/upgrading-to-stricter-eslint-config), so you can start using linting without having to change significant portions of the project’s code. Here is an example, disabling commonly hard-to-retrofit rules:
 
-- Run `nvm use` to set Node to the correct version
-- Run tests via `npm run test`
-- Run linting via `npm run lint`
-- Run updates to Readme (if rules have changed) via `npm run write-rules`
-- Run preflight checks before committing final code via `npm run preflight`
-- Note: When working with the rule set, only modify the `index.js` file, not the `.eslintrc` file as it is for local linting only
+```js
+// Rules which we ideally would want to enforce but are reporting too many issues currently.
+const legacyRules = {
+  'max-nesting-depth': null,
+  'selector-max-specificity': null,
+};
+
+/** @type {import('stylelint').Config} */
+export default {
+  // See https://github.com/wagtail/stylelint-config-wagtail for rules.
+  extends: '@wagtail/stylelint-config-wagtail',
+  rules: {
+    ...legacyRules,
+  },
+};
+```
+
+#### Agent skills
+
+This project ships two agent skills for AI coding agents:
+
+- `upgrading-stylelint` — for auditing or carrying out a Stylelint upgrade within a project, including checking the upgrade path, reviewing migration guides, updating dependencies or config, running QA, and reporting follow-up work.
+- `upgrading-shared-stylelint-config` — for upgrading this shared Stylelint configuration itself to a new major release, including updating version constraints, reconfiguring rules, and releasing.
+
+Install the project skills with [Vercel Lab’s Agent Skills](https://github.com/vercel-labs/agent-skills):
+
+```sh
+npx skills add wagtail/stylelint-config-wagtail
+```
+
+Example prompt:
+
+```text
+Use the upgrading-stylelint skill to upgrade this project from Stylelint 16 to 17, including updating to the compatible stylelint-config-wagtail version. Update dependencies and config as needed, update as much of the styles as you can if safe.
+```
+
+#### Common CLI flags
+
+We recommend the following `run` script to add to your `package.json`:
+
+```json
+"lint:css": "stylelint --report-needless-disables --report-unscoped-disables 'src/sass'"
+```
+
+- Use [`--report-needless-disables`](https://stylelint.io/user-guide/cli#--report-needless-disables---rd) to ensure you do not use more `stylelint-disable` comments than needed.
+- Use [`--report-unscoped-disables`](https://stylelint.io/user-guide/cli#--report-unscoped-disables---rud) to prevent fully disabling linting.
+- Target specific folders so Stylelint doesn’t attempt to lint other file types, say JS or HTML files.
+
+#### `.stylelintignore`
+
+Stylelint supports ignore patterns in a `.stylelintignore` file, however we tend not to use this since we lint all files within a given folder.
+
+### Prettier
+
+This config is [Prettier](https://prettier.io/)-compatible, there isn’t anything extra needed.
+
+### Tailwind
+
+This config should work with [Tailwind](https://tailwindcss.com/) with no adjustments needed. Please submit an issue if that’s not the case.
+
+### prek for pre-commit hooks
+
+We recommend [prek](https://prek.j178.dev/), an implementation of the pre-commit framework to manage hooks. Our sample setup uses a standard `.pre-commit-config.yaml`, so the same configuration also works with `pre-commit` if needed:
+
+```yaml
+default_language_version:
+  node: system
+repos:
+  - repo: https://github.com/thibaudcolas/pre-commit-stylelint
+    rev: v17.9.0
+    hooks:
+      - id: stylelint
+        files: \.(css|scss)$
+        additional_dependencies:
+          - stylelint@17.9.0
+          - '@wagtail/stylelint-config-wagtail@2.0.0'
+```
+
+### Related tools
+
+To get the most out of this config, it is assumed that projects have the following tools set up:
+
+- [Prettier](https://prettier.io/) for automated formatting of stylesheets.
+- [Browserslist](https://github.com/browserslist/browserslist) and [autoprefixer](https://github.com/postcss/autoprefixer).
+
+## What’s included
+
+> See [`config.js`](./config.js) for the config definition. This package includes configuration from:
+>
+> - [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss)
+> - [`stylelint-order`](https://github.com/hudochenkov/stylelint-order)
+> - [`stylelint-declaration-strict-value`](https://github.com/AndyOGo/stylelint-declaration-strict-value)
 
 ## Rules
 
