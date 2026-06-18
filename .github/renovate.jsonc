@@ -1,0 +1,76 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", "helpers:pinGitHubActionDigests"],
+  "dependencyDashboard": false,
+  // https://renovatebot.com/docs/configuration-options/#commitbodytable
+  "commitBodyTable": true,
+  // https://renovatebot.com/docs/configuration-options/#ignoredeps
+  "ignoreDeps": [
+    // Updated in batches as part of new releases.
+    "stylelint",
+    "stylelint-find-new-rules",
+  ],
+  // https://renovatebot.com/docs/configuration-options/#labels
+  "labels": ["enhancement"],
+  // https://renovatebot.com/docs/configuration-options/#prcreation
+  "prCreation": "not-pending",
+  // Use shorter commit messages to account for long dependency names.
+  // https://docs.renovatebot.com/configuration-options/#commitmessagetopic
+  "commitMessageTopic": "{{depName}}",
+  // https://renovatebot.com/docs/configuration-options/#prbodycolumns
+  "prBodyColumns": ["Package", "Update", "Type", "Change"],
+  // https://renovatebot.com/docs/configuration-options/#rebasestaleprs
+  "rebaseStalePrs": true,
+  // Silently merge updates without PRs
+  "automergeType": "branch",
+  // https://renovatebot.com/docs/configuration-options/#schedule
+  "schedule": ["every weekend"],
+  // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
+  "minimumReleaseAge": "7 days",
+  // Limit the number of consecutive PRs
+  "prHourlyLimit": 2,
+  "node": {
+    "major": {
+      "enabled": true,
+    },
+    // https://renovatebot.com/docs/node/#configuring-support-policy
+    "supportPolicy": ["current"],
+  },
+  // https://renovatebot.com/docs/configuration-options/#lockfilemaintenance
+  "lockFileMaintenance": { "enabled": true, "automerge": true },
+  "packageRules": [
+    {
+      "packageNames": ["prettier"],
+      "groupName": "prettier",
+      "automerge": true,
+    },
+    { "packageNames": ["vitest"], "groupName": "vitest", "automerge": true },
+    {
+      "packageNames": [
+        "eslint",
+        "@eslint/js",
+        "@wagtail/eslint-config-wagtail",
+      ],
+      "groupName": "eslint",
+      "automerge": true,
+    },
+    {
+      "packageNames": ["stylelint-find-new-rules"],
+      "groupName": "stylelint-find-new-rules",
+      "automerge": true,
+    },
+    {
+      "packagePatterns": ["^actions/", "^github/"],
+      "groupName": "actions",
+      "automerge": true,
+    },
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "enabled": false,
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "enabled": false,
+    },
+  ],
+}
