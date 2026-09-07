@@ -7,5 +7,33 @@
   "settings": {
     // Manually set the version to disable automated detection of the "react" dependency.
     "react": { "version": "detect" }
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.mjs"],
+      "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest"
+      },
+      "rules": {
+        "import/no-unresolved": [
+          "error",
+          {
+            "ignore": ["^node:", "stylelint", "vitest"],
+            "amd": false,
+            "commonjs": false
+          }
+        ],
+        "import/extensions": "off",
+        "arrow-body-style": "off",
+        "no-param-reassign": "off",
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ]
+      }
+    }
+  ]
 }

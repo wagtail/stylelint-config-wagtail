@@ -1,0 +1,224 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`config > scenarios > block-no-empty 1`] = `
+[
+  "Empty block (block-no-empty)",
+]
+`;
+
+exports[`config > scenarios > color-hex-length 1`] = `
+[
+  "Expected "#ffffff" to be "#fff" (color-hex-length)",
+]
+`;
+
+exports[`config > scenarios > color-named 1`] = `
+[
+  "Disallowed named color "red" (color-named)",
+]
+`;
+
+exports[`config > scenarios > comment-no-empty 1`] = `
+[
+  "Empty comment (comment-no-empty)",
+]
+`;
+
+exports[`config > scenarios > declaration-block-no-duplicate-properties 1`] = `
+[
+  "Duplicate property "color" (declaration-block-no-duplicate-properties)",
+]
+`;
+
+exports[`config > scenarios > declaration-block-no-redundant-longhand-properties 1`] = `
+[
+  "Expected shorthand property "margin" (declaration-block-no-redundant-longhand-properties)",
+]
+`;
+
+exports[`config > scenarios > declaration-block-single-line-max-declarations 1`] = `
+[
+  "Too many declarations, maximum 1 (declaration-block-single-line-max-declarations)",
+]
+`;
+
+exports[`config > scenarios > declaration-no-important 1`] = `
+[
+  "Disallowed !important (declaration-no-important)",
+]
+`;
+
+exports[`config > scenarios > declaration-property-value-allowed-list 1`] = `
+[
+  "Disallowed value "left" for property "float" (declaration-property-value-allowed-list)",
+  "Disallowed value "left" for property "text-align" (declaration-property-value-allowed-list)",
+]
+`;
+
+exports[`config > scenarios > declaration-property-value-disallowed-list 1`] = `
+[
+  "Disallowed value "none" for property "border" (declaration-property-value-disallowed-list)",
+]
+`;
+
+exports[`config > scenarios > font-family-no-duplicate-names 1`] = `
+[
+  "Duplicate font-family name "Arial" (font-family-no-duplicate-names)",
+]
+`;
+
+exports[`config > scenarios > function-calc-no-unspaced-operator 1`] = `
+[
+  "Expected single space after "+" operator (function-calc-no-unspaced-operator)",
+  "Expected single space before "+" operator (function-calc-no-unspaced-operator)",
+]
+`;
+
+exports[`config > scenarios > function-linear-gradient-no-nonstandard-direction 1`] = `
+[
+  "Nonstandard direction (function-linear-gradient-no-nonstandard-direction)",
+]
+`;
+
+exports[`config > scenarios > function-url-quotes 1`] = `
+[
+  "Expected quotes around "url" function argument (function-url-quotes)",
+]
+`;
+
+exports[`config > scenarios > length-zero-no-unit 1`] = `
+[
+  "Disallowed unit (length-zero-no-unit)",
+]
+`;
+
+exports[`config > scenarios > max-nesting-depth 1`] = `[]`;
+
+exports[`config > scenarios > media-feature-name-no-unknown 1`] = `
+[
+  "Unknown media feature name "unknown" (media-feature-name-no-unknown)",
+]
+`;
+
+exports[`config > scenarios > no-empty-source 1`] = `
+[
+  "Empty source (no-empty-source)",
+]
+`;
+
+exports[`config > scenarios > order/order 1`] = `
+[
+  "Expected @include to come before declaration (order/order)",
+]
+`;
+
+exports[`config > scenarios > property-disallowed-list 1`] = `
+[
+  "Disallowed property "text-transform" (property-disallowed-list)",
+  "Disallowed property "left" (property-disallowed-list)",
+  "Disallowed property "forced-color-adjust" (property-disallowed-list)",
+]
+`;
+
+exports[`config > scenarios > property-no-unknown 1`] = `
+[
+  "Unknown property "unknown-prop" (property-no-unknown)",
+]
+`;
+
+exports[`config > scenarios > property-no-vendor-prefix 1`] = `
+[
+  "Vendor-prefixed property "-webkit-transform" (property-no-vendor-prefix)",
+]
+`;
+
+exports[`config > scenarios > rule-empty-line-before 1`] = `
+[
+  "Expected empty line before rule (rule-empty-line-before)",
+]
+`;
+
+exports[`config > scenarios > scale-unlimited/declaration-strict-value 1`] = `
+[
+  "Expected variable, function or keyword for "#fff" of "color" (scale-unlimited/declaration-strict-value)",
+  "Expected variable, function or keyword for "16px" of "font-size" (scale-unlimited/declaration-strict-value)",
+  "Expected variable, function or keyword for "10px" of "margin" (scale-unlimited/declaration-strict-value)",
+]
+`;
+
+exports[`config > scenarios > scss/media-feature-value-dollar-variable 1`] = `
+[
+  "Expected a dollar-variable (e.g. $var) to be used as a media feature value (scss/media-feature-value-dollar-variable)",
+]
+`;
+
+exports[`config > scenarios > scss/selector-class-pattern 1`] = `
+[
+  "Expected ".InvalidClass" to match pattern "/^[a-z]+[0-9]{0,2}(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$/" (scss/selector-class-pattern)",
+  "Expected ".invalid_underscore" to match pattern "/^[a-z]+[0-9]{0,2}(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*)?(--[a-z0-9]+(-[a-z0-9]+)*)?$/" (scss/selector-class-pattern)",
+]
+`;
+
+exports[`config > scenarios > scss/selector-no-redundant-nesting-selector 1`] = `
+[
+  "Unnecessary nesting selector (&) (scss/selector-no-redundant-nesting-selector)",
+]
+`;
+
+exports[`config > scenarios > scss/selector-no-union-class-name 1`] = `[]`;
+
+exports[`config > scenarios > selector-attribute-name-disallowed-list 1`] = `
+[
+  "Disallowed name "data-foo" (selector-attribute-name-disallowed-list)",
+]
+`;
+
+exports[`config > scenarios > selector-max-combinators 1`] = `
+[
+  "Too many combinators in ".a .b .c .d .e", maximum 3 (selector-max-combinators)",
+]
+`;
+
+exports[`config > scenarios > selector-max-id 1`] = `
+[
+  "Too many ID selectors in "#foo", maximum 0 (selector-max-id)",
+]
+`;
+
+exports[`config > scenarios > selector-max-specificity 1`] = `
+[
+  "Too high specificity in "#foo .bar .baz .qux", maximum "0,3,3" (selector-max-specificity)",
+]
+`;
+
+exports[`config > scenarios > selector-no-qualifying-type 1`] = `
+[
+  "Disallowed qualifying type selector "div" in "div#foo" (selector-no-qualifying-type)",
+]
+`;
+
+exports[`config > scenarios > selector-pseudo-element-no-unknown 1`] = `
+[
+  "Unknown pseudo-element selector "::unknown-pseudo" (selector-pseudo-element-no-unknown)",
+]
+`;
+
+exports[`config > scenarios > selector-type-no-unknown 1`] = `
+[
+  "Unknown type selector "unknown-element" (selector-type-no-unknown)",
+]
+`;
+
+exports[`config > scenarios > string-no-newline 1`] = `
+[
+  "Newline in string (string-no-newline)",
+]
+`;
+
+exports[`config > scenarios > unit-no-unknown 1`] = `
+[
+  "Unknown unit "pxz" (unit-no-unknown)",
+]
+`;
+
+exports[`config > scenarios > value-no-vendor-prefix 1`] = `[]`;

@@ -1,0 +1,351 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`semver - should those tests break, consider releasing a new major version of the package > config contents 1`] = `
+{
+  "annotation-no-unknown": null,
+  "at-rule-descriptor-no-unknown": null,
+  "at-rule-descriptor-value-no-unknown": null,
+  "at-rule-empty-line-before": null,
+  "at-rule-no-deprecated": [
+    true,
+  ],
+  "at-rule-no-unknown": null,
+  "at-rule-prelude-no-invalid": null,
+  "block-no-empty": [
+    true,
+  ],
+  "color-hex-length": [
+    "short",
+  ],
+  "color-named": [
+    "never",
+  ],
+  "color-no-invalid-hex": [
+    true,
+  ],
+  "comment-no-empty": [
+    true,
+  ],
+  "custom-property-no-missing-var-function": [
+    true,
+  ],
+  "declaration-block-no-duplicate-custom-properties": [
+    true,
+  ],
+  "declaration-block-no-duplicate-properties": [
+    true,
+  ],
+  "declaration-block-no-redundant-longhand-properties": [
+    true,
+  ],
+  "declaration-block-no-shorthand-property-overrides": [
+    true,
+  ],
+  "declaration-block-single-line-max-declarations": [
+    1,
+  ],
+  "declaration-no-important": [
+    true,
+  ],
+  "declaration-property-value-allowed-list": [
+    {
+      "clear": [
+        "both",
+        "none",
+      ],
+      "float": [
+        "inline-start",
+        "inline-end",
+        "none",
+        "unset",
+      ],
+      "text-align": [
+        "start",
+        "end",
+        "center",
+      ],
+    },
+  ],
+  "declaration-property-value-disallowed-list": [
+    {
+      "/^border/": [
+        "none",
+      ],
+    },
+    {
+      "severity": "error",
+    },
+  ],
+  "declaration-property-value-keyword-no-deprecated": [
+    true,
+  ],
+  "declaration-property-value-no-unknown": null,
+  "font-family-no-duplicate-names": [
+    true,
+  ],
+  "font-family-no-missing-generic-family-keyword": [
+    true,
+  ],
+  "function-calc-no-unspaced-operator": [
+    true,
+  ],
+  "function-linear-gradient-no-nonstandard-direction": [
+    true,
+  ],
+  "function-no-unknown": null,
+  "function-url-quotes": [
+    "always",
+  ],
+  "keyframe-block-no-duplicate-selectors": [
+    true,
+  ],
+  "keyframe-declaration-no-important": [
+    true,
+  ],
+  "length-zero-no-unit": [
+    true,
+  ],
+  "max-nesting-depth": [
+    3,
+  ],
+  "media-feature-name-no-unknown": [
+    true,
+  ],
+  "media-feature-name-value-no-unknown": null,
+  "media-query-no-invalid": null,
+  "media-type-no-deprecated": [
+    true,
+  ],
+  "named-grid-areas-no-invalid": [
+    true,
+  ],
+  "nesting-selector-no-missing-scoping-root": [
+    true,
+    {
+      "ignoreAtRules": [
+        "mixin",
+      ],
+    },
+  ],
+  "no-descending-specificity": null,
+  "no-duplicate-at-import-rules": [
+    true,
+  ],
+  "no-duplicate-selectors": null,
+  "no-empty-source": [
+    true,
+  ],
+  "no-invalid-double-slash-comments": [
+    true,
+  ],
+  "no-invalid-position-at-import-rule": [
+    true,
+    {
+      "ignoreAtRules": [
+        "use",
+        "forward",
+      ],
+    },
+  ],
+  "no-invalid-position-declaration": [
+    true,
+  ],
+  "no-irregular-whitespace": [
+    true,
+  ],
+  "order/order": [
+    [
+      {
+        "name": "include",
+        "type": "at-rule",
+      },
+      "declarations",
+    ],
+  ],
+  "property-disallowed-list": [
+    [
+      "/forced-color-adjust/",
+      "/left/",
+      "/right/",
+      "text-transform",
+    ],
+  ],
+  "property-no-deprecated": [
+    true,
+  ],
+  "property-no-unknown": [
+    true,
+  ],
+  "property-no-vendor-prefix": [
+    true,
+  ],
+  "rule-empty-line-before": [
+    "always",
+    {
+      "except": [
+        "after-single-line-comment",
+        "first-nested",
+      ],
+    },
+  ],
+  "scale-unlimited/declaration-strict-value": [
+    [
+      "color",
+      "/-color/",
+      "fill",
+      "stroke",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "/margin/",
+      "/padding/",
+      "gap",
+      "z-index",
+    ],
+    {
+      "ignoreValues": [
+        "currentColor",
+        "inherit",
+        "initial",
+        "none",
+        "unset",
+        "transparent",
+        "Canvas",
+        "CanvasText",
+        "LinkText",
+        "VisitedText",
+        "ActiveText",
+        "ButtonFace",
+        "ButtonText",
+        "ButtonBorder",
+        "Field",
+        "FieldText",
+        "Highlight",
+        "HighlightText",
+        "SelectedItem",
+        "SelectedItemText",
+        "Mark",
+        "MarkText",
+        "GrayText",
+        "AccentColor",
+        "AccentColorText",
+      ],
+    },
+  ],
+  "scss/at-else-closing-brace-newline-after": null,
+  "scss/at-else-closing-brace-space-after": null,
+  "scss/at-else-empty-line-before": null,
+  "scss/at-else-if-parentheses-space-before": null,
+  "scss/at-extend-no-missing-placeholder": [
+    true,
+  ],
+  "scss/at-function-parentheses-space-before": null,
+  "scss/at-if-closing-brace-newline-after": null,
+  "scss/at-if-closing-brace-space-after": null,
+  "scss/at-if-no-null": [
+    true,
+  ],
+  "scss/at-mixin-parentheses-space-before": null,
+  "scss/at-rule-no-unknown": [
+    true,
+  ],
+  "scss/comment-no-empty": [
+    true,
+  ],
+  "scss/declaration-nested-properties-no-divided-groups": [
+    true,
+  ],
+  "scss/dollar-variable-colon-newline-after": null,
+  "scss/dollar-variable-colon-space-after": null,
+  "scss/dollar-variable-colon-space-before": null,
+  "scss/dollar-variable-no-missing-interpolation": [
+    true,
+  ],
+  "scss/function-quote-no-quoted-strings-inside": [
+    true,
+  ],
+  "scss/function-unquote-no-unquoted-strings-inside": [
+    true,
+  ],
+  "scss/load-no-partial-leading-underscore": [
+    true,
+  ],
+  "scss/load-partial-extension": [
+    "never",
+  ],
+  "scss/media-feature-value-dollar-variable": [
+    "always",
+    {
+      "ignore": [
+        "keywords",
+      ],
+    },
+  ],
+  "scss/no-duplicate-mixins": [
+    true,
+  ],
+  "scss/no-global-function-names": [
+    true,
+  ],
+  "scss/operator-no-newline-after": null,
+  "scss/operator-no-newline-before": null,
+  "scss/operator-no-unspaced": null,
+  "scss/selector-class-pattern": [
+    /\\^\\[a-z\\]\\+\\[0-9\\]\\{0,2\\}\\(-\\[a-z0-9\\]\\+\\)\\*\\(__\\[a-z0-9\\]\\+\\(-\\[a-z0-9\\]\\+\\)\\*\\)\\?\\(--\\[a-z0-9\\]\\+\\(-\\[a-z0-9\\]\\+\\)\\*\\)\\?\\$/,
+    {
+      "resolveNestedSelectors": true,
+    },
+  ],
+  "scss/selector-no-redundant-nesting-selector": [
+    true,
+  ],
+  "scss/selector-no-union-class-name": [
+    true,
+  ],
+  "selector-anb-no-unmatchable": [
+    true,
+  ],
+  "selector-attribute-name-disallowed-list": [
+    "/^data-/",
+  ],
+  "selector-max-combinators": [
+    3,
+  ],
+  "selector-max-id": [
+    0,
+  ],
+  "selector-max-specificity": [
+    "0,3,3",
+  ],
+  "selector-no-qualifying-type": [
+    true,
+    {
+      "ignore": [
+        "attribute",
+        "class",
+      ],
+    },
+  ],
+  "selector-pseudo-class-no-unknown": [
+    true,
+  ],
+  "selector-pseudo-element-no-unknown": [
+    true,
+  ],
+  "selector-type-no-unknown": [
+    true,
+  ],
+  "string-no-newline": [
+    true,
+  ],
+  "syntax-string-no-invalid": [
+    true,
+  ],
+  "unit-no-unknown": [
+    true,
+  ],
+  "value-no-vendor-prefix": [
+    true,
+  ],
+}
+`;
