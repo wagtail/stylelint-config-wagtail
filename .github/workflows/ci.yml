@@ -14,4 +14,5 @@ jobs:
       - run: npx vp check
       - run: npm run lint:readme
       - run: npm run test
+      - run: npm run test:rules
       - run: npm pack --loglevel notice 2>&1 >/dev/null | sed -e 's/^npm notice //' && rm *.tgz
