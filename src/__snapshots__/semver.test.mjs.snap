@@ -149,6 +149,11 @@ exports[`semver - should those tests break, consider releasing a new major versi
   ],
   "no-invalid-position-declaration": [
     true,
+    {
+      "ignoreAtRules": [
+        "mixin",
+      ],
+    },
   ],
   "no-irregular-whitespace": [
     true,

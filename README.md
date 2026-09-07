@@ -170,7 +170,7 @@ To get the most out of this config, it is assumed that projects have the followi
 | [`no-empty-source`][30]                                      | Enabled                                                             |
 | [`no-invalid-double-slash-comments`][31]                     | Enabled                                                             |
 | [`no-invalid-position-at-import-rule`][32]                   | `{"ignoreAtRules":["use","forward"]}`                               |
-| [`no-invalid-position-declaration`][33]                      | Enabled                                                             |
+| [`no-invalid-position-declaration`][33]                      | `{"ignoreAtRules":["mixin"]}`                                       |
 | [`no-irregular-whitespace`][34]                              | Enabled                                                             |
 | [`order/order`][35]                                          | `[{"name":"include","type":"at-rule"},"declarations"]`              |
 | [`property-disallowed-list`][36]                             | `["/forced-color-adjust/","/left/","/right/","text-transform"]`     |
