@@ -148,7 +148,7 @@ Note any warnings or errors from npm or from the project’s QA tools. Those mig
 This is crucial for the success of the upgrade, and we have bespoke tools to facilitate this.
 
 - [ ] Use `npm run test:rules` to determine which new rules have been introduced.
-- [ ] Update `src/unused.js`, making sure to add any new rules in the correct section (look at the guidance inside the file).
+- [ ] Update `src/unused.mjs`, making sure to add any new rules in the correct section (look at the guidance inside the file).
 - [ ] If in doubt, move the rules to a new section inside the `toReview` array so this can be further reviewed at a later date.
 - [ ] Use `npm run test -- -u` to update the project’s snapshots. This is crucial to understand which rule changes will affect users of this project.
 
@@ -183,9 +183,9 @@ The configuration now mandates stylelint v<version>. {Add commentary about the m
 
 For the key rules sections,
 
-- [ ] Populate "New rules configuration" for newly-introduced rules, which will show as additions in the git diff of `src/__snapshots__/semver.test.js.snap`.
-- [ ] Populate "New rules configuration" for config changes on existing rules, which will show as additions + deletions inside `src/__snapshots__/semver.test.js.snap`.
-- [ ] Populate "New unused rules" based on the changes in the diff of `src/unused.js`.
+- [ ] Populate "New rules configuration" for newly-introduced rules, which will show as additions in the git diff of `src/__snapshots__/semver.test.mjs.snap`.
+- [ ] Populate "New rules configuration" for config changes on existing rules, which will show as additions + deletions inside `src/__snapshots__/semver.test.mjs.snap`.
+- [ ] Populate "New unused rules" based on the changes in the diff of `src/unused.mjs`.
 
 ### Update documentation
 
