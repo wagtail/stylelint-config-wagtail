@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enable type-aware linting with type checking in `vp lint` and `vp check`.
 - Update the development and testing Node.js version to 26 (was 24), refreshing `package-lock.json`.
 - Pick up `stylelint-config-recommended-scss` 17.0.1 through the lockfile refresh, where `no-invalid-position-declaration` ignores declarations inside `@mixin` at-rules.
+- Complete the `src/unused.mjs` triage with the rules declined in the Stylelint 17 upgrade, so `npm run test:rules` passes again.
 
 ## [2.0.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/2.0.0) - 2026-04-23
 

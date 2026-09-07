@@ -24,7 +24,7 @@
   // Silently merge updates without PRs
   "automergeType": "branch",
   // https://renovatebot.com/docs/configuration-options/#schedule
-  "schedule": ["every weekend"],
+  "schedule": ["* * 3,22 * *"],
   // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
   "minimumReleaseAge": "7 days",
   // Limit the number of consecutive PRs

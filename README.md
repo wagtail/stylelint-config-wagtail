@@ -124,7 +124,7 @@ To get the most out of this config, it is assumed that projects have the followi
 
 ## What’s included
 
-> See [`config.js`](./config.js) for the config definition. This package includes configuration from:
+> See [`index.js`](./index.js) for the config definition. This package includes configuration from:
 >
 > - [stylelint-config-recommended-scss](https://github.com/stylelint-scss/stylelint-config-recommended-scss)
 > - [`stylelint-order`](https://github.com/hudochenkov/stylelint-order)
