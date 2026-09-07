@@ -40,18 +40,9 @@
   "lockFileMaintenance": { "enabled": true, "automerge": true },
   "packageRules": [
     {
-      "packageNames": ["prettier"],
-      "groupName": "prettier",
-      "automerge": true,
-    },
-    { "packageNames": ["vitest"], "groupName": "vitest", "automerge": true },
-    {
-      "packageNames": [
-        "eslint",
-        "@eslint/js",
-        "@wagtail/eslint-config-wagtail",
-      ],
-      "groupName": "eslint",
+      "packageNames": ["vite-plus"],
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "vite-plus",
       "automerge": true,
     },
     {
