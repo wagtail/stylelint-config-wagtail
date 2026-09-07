@@ -119,7 +119,7 @@ repos:
 
 To get the most out of this config, it is assumed that projects have the following tools set up:
 
-- [Prettier](https://prettier.io/) for automated formatting of stylesheets.
+- [Vite+](https://viteplus.dev/) (or another code formatter such as [Prettier](https://prettier.io/)) for automated formatting of stylesheets.
 - [Browserslist](https://github.com/browserslist/browserslist) and [autoprefixer](https://github.com/postcss/autoprefixer).
 
 ## What’s included

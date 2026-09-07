@@ -15,7 +15,7 @@ fnm use
 npm install
 ```
 
-Also take the time to integrate [Prettier](https://prettier.io/) and [ESLint](https://eslint.org/) with your code editor.
+Also take the time to integrate [Vite+](https://viteplus.dev/) with your code editor, for code formatting and linting.
 
 ### Working on the project
 

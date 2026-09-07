@@ -2,30 +2,43 @@
   "name": "@wagtail/stylelint-config-wagtail",
   "version": "2.0.0",
   "description": "Shareable Stylelint config for CSS and SCSS, following Wagtail’s code style",
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
-  "author": "wagtail",
-  "license": "MIT",
-  "homepage": "https://github.com/wagtail/stylelint-config-wagtail#readme",
-  "bugs": {
-    "url": "https://github.com/wagtail/stylelint-config-wagtail/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wagtail/stylelint-config-wagtail.git"
-  },
   "keywords": [
     "bem",
     "config",
     "itcss",
     "lint",
     "styleguide",
-    "stylelint-config",
     "stylelint",
+    "stylelint-config",
     "wagtail"
   ],
+  "homepage": "https://github.com/wagtail/stylelint-config-wagtail#readme",
+  "bugs": {
+    "url": "https://github.com/wagtail/stylelint-config-wagtail/issues"
+  },
+  "license": "MIT",
+  "author": "wagtail",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wagtail/stylelint-config-wagtail.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "format": "vp fmt --write",
+    "lint:format": "vp fmt --check",
+    "lint:js": "vp lint",
+    "lint:readme": "node write-rules.mjs --check",
+    "lint": "npm run lint:format && npm run lint:js && npm run lint:readme",
+    "preflight": "npm run format && npm run lint && npm run test",
+    "test": "vp test run",
+    "test:rules": "stylelint-find-new-rules src/unused.mjs --unused --deprecated --invalid",
+    "test:watch": "vp test watch",
+    "write-rules": "node write-rules.mjs",
+    "print-config": "stylelint --print-config .stylelintrc"
+  },
   "dependencies": {
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-recommended-scss": "^17.0.0",
@@ -33,12 +46,9 @@
     "stylelint-order": "^7.0.1"
   },
   "devDependencies": {
-    "@wagtail/eslint-config-wagtail": "^0.4.0",
-    "eslint": "^8.57.0",
-    "prettier": "^3.3.3",
     "stylelint": "^17.9.0",
     "stylelint-find-new-rules": "^6.0.0",
-    "vitest": "^4.1.7"
+    "vite-plus": "0.3.0"
   },
   "peerDependencies": {
     "stylelint": ">=17.0.0"
@@ -47,22 +57,5 @@
     "packageManager": {
       "name": "npm"
     }
-  },
-  "scripts": {
-    "format": "prettier --cache --write '**/*.{js,md,css,scss,yaml,yml,json}'",
-    "lint:format": "prettier --cache --check '**/*.{js,md,css,scss,yaml,yml,json}'",
-    "lint:js": "eslint --cache --cache-location ./node_modules/.cache/.eslintcache ./ --max-warnings 0 --report-unused-disable-directives",
-    "lint:readme": "node write-rules.mjs --check",
-    "lint": "npm run lint:format && npm run lint:js && npm run lint:readme",
-    "preflight": "npm run format && npm run lint && npm run test",
-    "test": "vitest run",
-    "test:rules": "stylelint-find-new-rules src/unused.mjs --unused --deprecated --invalid",
-    "test:watch": "vitest watch",
-    "write-rules": "node write-rules.mjs",
-    "print-config": "stylelint --print-config .stylelintrc"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "quoteProps": "consistent"
   }
 }

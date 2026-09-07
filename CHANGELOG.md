@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Switch the project’s own development tooling from ESLint, Prettier and Vitest to [Vite+](https://viteplus.dev/) (`vp lint`, `vp fmt`, `vp test`). This does not change the published Stylelint config in any way.
+
 ## [2.0.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/2.0.0) - 2026-04-23
 
 ### Changed
