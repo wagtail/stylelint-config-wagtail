@@ -27,6 +27,7 @@
   ],
   "main": "index.js",
   "scripts": {
+    "prepare": "vp config --no-agent",
     "format": "vp fmt --write",
     "lint:format": "vp fmt --check",
     "lint:js": "vp lint",

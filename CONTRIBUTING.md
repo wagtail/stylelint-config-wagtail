@@ -31,6 +31,8 @@ npm run test:watch
 npm run lint
 ```
 
+Commit hooks to check staged files are set up automatically on `npm install`; disable them in your clone with `vp hooks disable`.
+
 ### Releasing a new version
 
 - Make a new branch for the new release.

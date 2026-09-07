@@ -172,4 +172,4 @@ const writeRules = async () => {
     });
 };
 
-writeRules();
+void writeRules();

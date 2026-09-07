@@ -1,0 +1,3 @@
+#!/bin/sh
+# `vp` is not on PATH when git runs hooks; use the local binary directly.
+./node_modules/.bin/vp staged

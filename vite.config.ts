@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite-plus';
 
 export default defineConfig({
+  staged: {
+    '*': 'vp check --fix',
+  },
   test: {
     exclude: ['**/node_modules/**'],
   },
@@ -14,7 +17,8 @@ export default defineConfig({
     },
     options: {
       denyWarnings: true,
-      reportUnusedDisableDirectives: 'deny',
+      typeAware: true,
+      typeCheck: true,
     },
   },
   fmt: {

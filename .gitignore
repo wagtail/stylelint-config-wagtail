@@ -7,3 +7,6 @@ yarn-error.log*
 
 # Dependency directories
 node_modules/
+
+# Vite+ generated hook dispatcher (recreated by vp config)
+.vite-hooks/_/
