@@ -49,7 +49,7 @@
   "devDependencies": {
     "stylelint": "^17.9.0",
     "stylelint-find-new-rules": "^6.0.0",
-    "vite-plus": "0.3.0"
+    "vite-plus": "0.3.3"
   },
   "peerDependencies": {
     "stylelint": ">=17.0.0"
