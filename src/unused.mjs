@@ -27,6 +27,7 @@ const tooOpinionated = [
   'scss/no-dollar-variables',
   'scss/partial-no-import',
   'scss/selector-nest-combinators',
+  'selector-attribute-name-disallowed-list',
   'selector-attribute-operator-allowed-list',
   'selector-attribute-operator-disallowed-list',
   'selector-combinator-allowed-list',

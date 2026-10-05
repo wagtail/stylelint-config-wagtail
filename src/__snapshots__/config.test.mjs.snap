@@ -32,7 +32,7 @@ exports[`config > scenarios > declaration-block-no-duplicate-properties 1`] = `
 
 exports[`config > scenarios > declaration-block-no-redundant-longhand-properties 1`] = `
 [
-  "Expected shorthand property "margin" (declaration-block-no-redundant-longhand-properties)",
+  "Expected shorthand property "border-width" (declaration-block-no-redundant-longhand-properties)",
 ]
 `;
 
@@ -58,6 +58,7 @@ exports[`config > scenarios > declaration-property-value-allowed-list 1`] = `
 exports[`config > scenarios > declaration-property-value-disallowed-list 1`] = `
 [
   "Disallowed value "none" for property "border" (declaration-property-value-disallowed-list)",
+  "Disallowed value "break-word" for property "word-break" (declaration-property-value-disallowed-list)",
 ]
 `;
 
@@ -117,6 +118,7 @@ exports[`config > scenarios > property-disallowed-list 1`] = `
   "Disallowed property "text-transform" (property-disallowed-list)",
   "Disallowed property "left" (property-disallowed-list)",
   "Disallowed property "forced-color-adjust" (property-disallowed-list)",
+  "Disallowed property "word-wrap" (property-disallowed-list)",
 ]
 `;
 
@@ -146,6 +148,12 @@ exports[`config > scenarios > scale-unlimited/declaration-strict-value 1`] = `
 ]
 `;
 
+exports[`config > scenarios > scss/at-rule-no-unknown 1`] = `
+[
+  "Unexpected unknown at-rule "@unknown-at-rule" (scss/at-rule-no-unknown)",
+]
+`;
+
 exports[`config > scenarios > scss/media-feature-value-dollar-variable 1`] = `
 [
   "Expected a dollar-variable (e.g. $var) to be used as a media feature value (scss/media-feature-value-dollar-variable)",
@@ -167,9 +175,9 @@ exports[`config > scenarios > scss/selector-no-redundant-nesting-selector 1`] = 
 
 exports[`config > scenarios > scss/selector-no-union-class-name 1`] = `[]`;
 
-exports[`config > scenarios > selector-attribute-name-disallowed-list 1`] = `
+exports[`config > scenarios > selector-disallowed-list 1`] = `
 [
-  "Disallowed name "data-foo" (selector-attribute-name-disallowed-list)",
+  "Disallowed selector "[data-foo]" (selector-disallowed-list)",
 ]
 `;
 

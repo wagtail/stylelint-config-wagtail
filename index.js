@@ -10,7 +10,12 @@ module.exports = {
     'color-named': 'never',
     'comment-no-empty': true,
     'declaration-block-no-duplicate-properties': true,
-    'declaration-block-no-redundant-longhand-properties': true,
+    // Longhands for spacing are allowed, so values can be written side by side on one line.
+    // See https://github.com/wagtail/stylelint-config-wagtail/issues/42.
+    'declaration-block-no-redundant-longhand-properties': [
+      true,
+      { ignoreShorthands: ['/margin/', '/padding/'] },
+    ],
     'declaration-block-single-line-max-declarations': 1,
     'declaration-property-value-allowed-list': {
       // Only allow logical values, and resets.
@@ -21,7 +26,12 @@ module.exports = {
       'text-align': ['start', 'end', 'center'],
     },
     'declaration-property-value-disallowed-list': [
-      { '/^border/': ['none'] },
+      {
+        '/^border/': ['none'],
+        // Use `overflow-wrap: anywhere` instead, which works consistently across browsers.
+        // See https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap.
+        'word-break': ['break-word'],
+      },
       { severity: 'error' },
     ],
     'declaration-no-important': true,
@@ -49,6 +59,9 @@ module.exports = {
       '/right/',
       // Disallow text-transform, as we never want text to be uppercased.
       'text-transform',
+      // Deprecated alias for `overflow-wrap`. Always use `overflow-wrap` instead.
+      // See https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap.
+      'word-wrap',
     ],
     'property-no-unknown': true,
     'property-no-vendor-prefix': true,
@@ -106,13 +119,30 @@ module.exports = {
         ],
       },
     ],
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        // At-rules used by Tailwind CSS and its PostCSS/SCSS integrations.
+        ignoreAtRules: [
+          'tailwind',
+          'apply',
+          'variants',
+          'responsive',
+          'screen',
+          'layer',
+        ],
+      },
+    ],
     'scss/media-feature-value-dollar-variable': [
       'always',
       { ignore: ['keywords'] },
     ],
     'scss/selector-no-redundant-nesting-selector': true,
     'scss/selector-no-union-class-name': true,
-    'selector-attribute-name-disallowed-list': '/^data-/',
+    // Allow `data-` attributes only when they have a value, for styling component states.
+    // Bare `data-` attributes are disallowed.
+    // See https://github.com/wagtail/stylelint-config-wagtail/issues/47.
+    'selector-disallowed-list': ['/\\[\\s*data-[^=\\]]*\\]/'],
     'scss/selector-class-pattern': [
       // Loose pattern for hyphenated BEM. This also allows simple words to be used as class names, .e.g. `.active`, `.button`.
       // Based on:

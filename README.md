@@ -135,79 +135,79 @@ To get the most out of this config, it is assumed that projects have the followi
 <!-- AUTO GENERATED - run `npm run write-rules` to update - do not modify manually -->
 <!-- RULES:START -->
 
-| Rule                                                         | Config                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------------- |
-| [`at-rule-no-deprecated`][0]                                 | Enabled                                                             |
-| [`block-no-empty`][1]                                        | Enabled                                                             |
-| [`color-hex-length`][2]                                      | `"short"`                                                           |
-| [`color-named`][3]                                           | `"never"`                                                           |
-| [`color-no-invalid-hex`][4]                                  | Enabled                                                             |
-| [`comment-no-empty`][5]                                      | Enabled                                                             |
-| [`custom-property-no-missing-var-function`][6]               | Enabled                                                             |
-| [`declaration-block-no-duplicate-custom-properties`][7]      | Enabled                                                             |
-| [`declaration-block-no-duplicate-properties`][8]             | Enabled                                                             |
-| [`declaration-block-no-redundant-longhand-properties`][9]    | Enabled                                                             |
-| [`declaration-block-no-shorthand-property-overrides`][10]    | Enabled                                                             |
-| [`declaration-block-single-line-max-declarations`][11]       | `1`                                                                 |
-| [`declaration-no-important`][12]                             | Enabled                                                             |
-| [`declaration-property-value-allowed-list`][13]              | Enabled - [see Config][config]                                      |
-| [`declaration-property-value-disallowed-list`][14]           | `{"/^border/":["none"]}, {"severity":"error"}`                      |
-| [`declaration-property-value-keyword-no-deprecated`][15]     | Enabled                                                             |
-| [`font-family-no-duplicate-names`][16]                       | Enabled                                                             |
-| [`font-family-no-missing-generic-family-keyword`][17]        | Enabled                                                             |
-| [`function-calc-no-unspaced-operator`][18]                   | Enabled                                                             |
-| [`function-linear-gradient-no-nonstandard-direction`][19]    | Enabled                                                             |
-| [`function-url-quotes`][20]                                  | `"always"`                                                          |
-| [`keyframe-block-no-duplicate-selectors`][21]                | Enabled                                                             |
-| [`keyframe-declaration-no-important`][22]                    | Enabled                                                             |
-| [`length-zero-no-unit`][23]                                  | Enabled                                                             |
-| [`max-nesting-depth`][24]                                    | `3`                                                                 |
-| [`media-feature-name-no-unknown`][25]                        | Enabled                                                             |
-| [`media-type-no-deprecated`][26]                             | Enabled                                                             |
-| [`named-grid-areas-no-invalid`][27]                          | Enabled                                                             |
-| [`nesting-selector-no-missing-scoping-root`][28]             | `{"ignoreAtRules":["mixin"]}`                                       |
-| [`no-duplicate-at-import-rules`][29]                         | Enabled                                                             |
-| [`no-empty-source`][30]                                      | Enabled                                                             |
-| [`no-invalid-double-slash-comments`][31]                     | Enabled                                                             |
-| [`no-invalid-position-at-import-rule`][32]                   | `{"ignoreAtRules":["use","forward"]}`                               |
-| [`no-invalid-position-declaration`][33]                      | `{"ignoreAtRules":["mixin"]}`                                       |
-| [`no-irregular-whitespace`][34]                              | Enabled                                                             |
-| [`order/order`][35]                                          | Enabled - [see Config][config]                                      |
-| [`property-disallowed-list`][36]                             | `["/forced-color-adjust/","/left/","/right/","text-transform"]`     |
-| [`property-no-deprecated`][37]                               | Enabled                                                             |
-| [`property-no-unknown`][38]                                  | Enabled                                                             |
-| [`property-no-vendor-prefix`][39]                            | Enabled                                                             |
-| [`rule-empty-line-before`][40]                               | `"always", {"except":["after-single-line-comment","first-nested"]}` |
-| [`scale-unlimited/declaration-strict-value`][41]             | Enabled - [see Config][config]                                      |
-| [`scss/at-extend-no-missing-placeholder`][42]                | Enabled                                                             |
-| [`scss/at-if-no-null`][43]                                   | Enabled                                                             |
-| [`scss/at-rule-no-unknown`][44]                              | Enabled                                                             |
-| [`scss/comment-no-empty`][45]                                | Enabled                                                             |
-| [`scss/declaration-nested-properties-no-divided-groups`][46] | Enabled                                                             |
-| [`scss/dollar-variable-no-missing-interpolation`][47]        | Enabled                                                             |
-| [`scss/function-quote-no-quoted-strings-inside`][48]         | Enabled                                                             |
-| [`scss/function-unquote-no-unquoted-strings-inside`][49]     | Enabled                                                             |
-| [`scss/load-no-partial-leading-underscore`][50]              | Enabled                                                             |
-| [`scss/load-partial-extension`][51]                          | `"never"`                                                           |
-| [`scss/media-feature-value-dollar-variable`][52]             | `"always", {"ignore":["keywords"]}`                                 |
-| [`scss/no-duplicate-mixins`][53]                             | Enabled                                                             |
-| [`scss/no-global-function-names`][54]                        | Enabled                                                             |
-| [`scss/selector-class-pattern`][55]                          | `{}, {"resolveNestedSelectors":true}`                               |
-| [`scss/selector-no-redundant-nesting-selector`][56]          | Enabled                                                             |
-| [`scss/selector-no-union-class-name`][57]                    | Enabled                                                             |
-| [`selector-anb-no-unmatchable`][58]                          | Enabled                                                             |
-| [`selector-attribute-name-disallowed-list`][59]              | `"/^data-/"`                                                        |
-| [`selector-max-combinators`][60]                             | `3`                                                                 |
-| [`selector-max-id`][61]                                      | `0`                                                                 |
-| [`selector-max-specificity`][62]                             | `"0,3,3"`                                                           |
-| [`selector-no-qualifying-type`][63]                          | `{"ignore":["attribute","class"]}`                                  |
-| [`selector-pseudo-class-no-unknown`][64]                     | Enabled                                                             |
-| [`selector-pseudo-element-no-unknown`][65]                   | Enabled                                                             |
-| [`selector-type-no-unknown`][66]                             | Enabled                                                             |
-| [`string-no-newline`][67]                                    | Enabled                                                             |
-| [`syntax-string-no-invalid`][68]                             | Enabled                                                             |
-| [`unit-no-unknown`][69]                                      | Enabled                                                             |
-| [`value-no-vendor-prefix`][70]                               | Enabled                                                             |
+| Rule                                                         | Config                                                                      |
+| ------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| [`at-rule-no-deprecated`][0]                                 | Enabled                                                                     |
+| [`block-no-empty`][1]                                        | Enabled                                                                     |
+| [`color-hex-length`][2]                                      | `"short"`                                                                   |
+| [`color-named`][3]                                           | `"never"`                                                                   |
+| [`color-no-invalid-hex`][4]                                  | Enabled                                                                     |
+| [`comment-no-empty`][5]                                      | Enabled                                                                     |
+| [`custom-property-no-missing-var-function`][6]               | Enabled                                                                     |
+| [`declaration-block-no-duplicate-custom-properties`][7]      | Enabled                                                                     |
+| [`declaration-block-no-duplicate-properties`][8]             | Enabled                                                                     |
+| [`declaration-block-no-redundant-longhand-properties`][9]    | `{"ignoreShorthands":["/margin/","/padding/"]}`                             |
+| [`declaration-block-no-shorthand-property-overrides`][10]    | Enabled                                                                     |
+| [`declaration-block-single-line-max-declarations`][11]       | `1`                                                                         |
+| [`declaration-no-important`][12]                             | Enabled                                                                     |
+| [`declaration-property-value-allowed-list`][13]              | Enabled - [see Config][config]                                              |
+| [`declaration-property-value-disallowed-list`][14]           | `{"/^border/":["none"],"word-break":["break-word"]}, {"severity":"error"}`  |
+| [`declaration-property-value-keyword-no-deprecated`][15]     | Enabled                                                                     |
+| [`font-family-no-duplicate-names`][16]                       | Enabled                                                                     |
+| [`font-family-no-missing-generic-family-keyword`][17]        | Enabled                                                                     |
+| [`function-calc-no-unspaced-operator`][18]                   | Enabled                                                                     |
+| [`function-linear-gradient-no-nonstandard-direction`][19]    | Enabled                                                                     |
+| [`function-url-quotes`][20]                                  | `"always"`                                                                  |
+| [`keyframe-block-no-duplicate-selectors`][21]                | Enabled                                                                     |
+| [`keyframe-declaration-no-important`][22]                    | Enabled                                                                     |
+| [`length-zero-no-unit`][23]                                  | Enabled                                                                     |
+| [`max-nesting-depth`][24]                                    | `3`                                                                         |
+| [`media-feature-name-no-unknown`][25]                        | Enabled                                                                     |
+| [`media-type-no-deprecated`][26]                             | Enabled                                                                     |
+| [`named-grid-areas-no-invalid`][27]                          | Enabled                                                                     |
+| [`nesting-selector-no-missing-scoping-root`][28]             | `{"ignoreAtRules":["mixin"]}`                                               |
+| [`no-duplicate-at-import-rules`][29]                         | Enabled                                                                     |
+| [`no-empty-source`][30]                                      | Enabled                                                                     |
+| [`no-invalid-double-slash-comments`][31]                     | Enabled                                                                     |
+| [`no-invalid-position-at-import-rule`][32]                   | `{"ignoreAtRules":["use","forward"]}`                                       |
+| [`no-invalid-position-declaration`][33]                      | `{"ignoreAtRules":["mixin"]}`                                               |
+| [`no-irregular-whitespace`][34]                              | Enabled                                                                     |
+| [`order/order`][35]                                          | Enabled - [see Config][config]                                              |
+| [`property-disallowed-list`][36]                             | `["/forced-color-adjust/","/left/","/right/","text-transform","word-wrap"]` |
+| [`property-no-deprecated`][37]                               | Enabled                                                                     |
+| [`property-no-unknown`][38]                                  | Enabled                                                                     |
+| [`property-no-vendor-prefix`][39]                            | Enabled                                                                     |
+| [`rule-empty-line-before`][40]                               | `"always", {"except":["after-single-line-comment","first-nested"]}`         |
+| [`scale-unlimited/declaration-strict-value`][41]             | Enabled - [see Config][config]                                              |
+| [`scss/at-extend-no-missing-placeholder`][42]                | Enabled                                                                     |
+| [`scss/at-if-no-null`][43]                                   | Enabled                                                                     |
+| [`scss/at-rule-no-unknown`][44]                              | Enabled - [see Config][config]                                              |
+| [`scss/comment-no-empty`][45]                                | Enabled                                                                     |
+| [`scss/declaration-nested-properties-no-divided-groups`][46] | Enabled                                                                     |
+| [`scss/dollar-variable-no-missing-interpolation`][47]        | Enabled                                                                     |
+| [`scss/function-quote-no-quoted-strings-inside`][48]         | Enabled                                                                     |
+| [`scss/function-unquote-no-unquoted-strings-inside`][49]     | Enabled                                                                     |
+| [`scss/load-no-partial-leading-underscore`][50]              | Enabled                                                                     |
+| [`scss/load-partial-extension`][51]                          | `"never"`                                                                   |
+| [`scss/media-feature-value-dollar-variable`][52]             | `"always", {"ignore":["keywords"]}`                                         |
+| [`scss/no-duplicate-mixins`][53]                             | Enabled                                                                     |
+| [`scss/no-global-function-names`][54]                        | Enabled                                                                     |
+| [`scss/selector-class-pattern`][55]                          | `{}, {"resolveNestedSelectors":true}`                                       |
+| [`scss/selector-no-redundant-nesting-selector`][56]          | Enabled                                                                     |
+| [`scss/selector-no-union-class-name`][57]                    | Enabled                                                                     |
+| [`selector-anb-no-unmatchable`][58]                          | Enabled                                                                     |
+| [`selector-disallowed-list`][59]                             | `["/\\[\\s*data-[^=\\]]*\\]/"]`                                             |
+| [`selector-max-combinators`][60]                             | `3`                                                                         |
+| [`selector-max-id`][61]                                      | `0`                                                                         |
+| [`selector-max-specificity`][62]                             | `"0,3,3"`                                                                   |
+| [`selector-no-qualifying-type`][63]                          | `{"ignore":["attribute","class"]}`                                          |
+| [`selector-pseudo-class-no-unknown`][64]                     | Enabled                                                                     |
+| [`selector-pseudo-element-no-unknown`][65]                   | Enabled                                                                     |
+| [`selector-type-no-unknown`][66]                             | Enabled                                                                     |
+| [`string-no-newline`][67]                                    | Enabled                                                                     |
+| [`syntax-string-no-invalid`][68]                             | Enabled                                                                     |
+| [`unit-no-unknown`][69]                                      | Enabled                                                                     |
+| [`value-no-vendor-prefix`][70]                               | Enabled                                                                     |
 
 [config]: https://github.com/wagtail/stylelint-config-wagtail/blob/main/index.js
 [0]: https://stylelint.io/user-guide/rules/list/at-rule-no-deprecated/
@@ -269,7 +269,7 @@ To get the most out of this config, it is assumed that projects have the followi
 [56]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-redundant-nesting-selector/README.md
 [57]: https://github.com/stylelint-scss/stylelint-scss/blob/master/src/rules/selector-no-union-class-name/README.md
 [58]: https://stylelint.io/user-guide/rules/list/selector-anb-no-unmatchable/
-[59]: https://stylelint.io/user-guide/rules/list/selector-attribute-name-disallowed-list/
+[59]: https://stylelint.io/user-guide/rules/list/selector-disallowed-list/
 [60]: https://stylelint.io/user-guide/rules/list/selector-max-combinators/
 [61]: https://stylelint.io/user-guide/rules/list/selector-max-id/
 [62]: https://stylelint.io/user-guide/rules/list/selector-max-specificity/

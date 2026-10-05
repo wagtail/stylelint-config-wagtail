@@ -15,7 +15,8 @@ export default {
     code: '.foo { color: red; color: blue; }',
   },
   'declaration-block-no-redundant-longhand-properties': {
-    code: '.foo { margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; }',
+    // Margin and padding longhands are intentionally ignored.
+    code: '.foo { margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; }',
   },
   'declaration-block-single-line-max-declarations': {
     code: '.foo { color: red; background: blue; }',
@@ -24,7 +25,7 @@ export default {
     code: '.foo { float: left; text-align: left; }',
   },
   'declaration-property-value-disallowed-list': {
-    code: '.foo { border: none; }',
+    code: '.foo { border: none; word-break: break-word; }',
   },
   'declaration-no-important': {
     code: '.foo { color: red !important; }',
@@ -57,7 +58,7 @@ export default {
     code: '.foo { color: red; @include bar; }',
   },
   'property-disallowed-list': {
-    code: '.foo { text-transform: uppercase; left: 0; forced-color-adjust: none; }',
+    code: '.foo { text-transform: uppercase; left: 0; forced-color-adjust: none; word-wrap: break-word; }',
   },
   'property-no-unknown': {
     code: '.foo { unknown-prop: value; }',
@@ -71,6 +72,9 @@ export default {
   'scale-unlimited/declaration-strict-value': {
     code: '.foo { color: #fff; margin: 10px; font-size: 16px; }',
   },
+  'scss/at-rule-no-unknown': {
+    code: '@unknown-at-rule { .foo { color: red; } }',
+  },
   'scss/media-feature-value-dollar-variable': {
     code: '@media (min-width: 768px) { .foo { color: red; } }',
   },
@@ -80,8 +84,8 @@ export default {
   'scss/selector-no-union-class-name': {
     code: '.foo { &.foo { color: red; } }',
   },
-  'selector-attribute-name-disallowed-list': {
-    code: '[data-foo] { color: red; }',
+  'selector-disallowed-list': {
+    code: '[data-foo] { color: red; } [data-bar="baz"] { color: blue; }',
   },
   'scss/selector-class-pattern': {
     code: '.InvalidClass { color: red; } .invalid_underscore { color: red; }',

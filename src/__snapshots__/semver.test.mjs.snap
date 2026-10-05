@@ -37,6 +37,12 @@ exports[`semver - should those tests break, consider releasing a new major versi
   ],
   "declaration-block-no-redundant-longhand-properties": [
     true,
+    {
+      "ignoreShorthands": [
+        "/margin/",
+        "/padding/",
+      ],
+    },
   ],
   "declaration-block-no-shorthand-property-overrides": [
     true,
@@ -70,6 +76,9 @@ exports[`semver - should those tests break, consider releasing a new major versi
     {
       "/^border/": [
         "none",
+      ],
+      "word-break": [
+        "break-word",
       ],
     },
     {
@@ -175,6 +184,7 @@ exports[`semver - should those tests break, consider releasing a new major versi
       "/left/",
       "/right/",
       "text-transform",
+      "word-wrap",
     ],
   ],
   "property-no-deprecated": [
@@ -255,6 +265,16 @@ exports[`semver - should those tests break, consider releasing a new major versi
   "scss/at-mixin-parentheses-space-before": null,
   "scss/at-rule-no-unknown": [
     true,
+    {
+      "ignoreAtRules": [
+        "tailwind",
+        "apply",
+        "variants",
+        "responsive",
+        "screen",
+        "layer",
+      ],
+    },
   ],
   "scss/comment-no-empty": [
     true,
@@ -312,8 +332,10 @@ exports[`semver - should those tests break, consider releasing a new major versi
   "selector-anb-no-unmatchable": [
     true,
   ],
-  "selector-attribute-name-disallowed-list": [
-    "/^data-/",
+  "selector-disallowed-list": [
+    [
+      "/\\[\\s*data-[^=\\]]*\\]/",
+    ],
   ],
   "selector-max-combinators": [
     3,
