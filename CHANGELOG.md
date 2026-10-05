@@ -7,20 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/2.0.1) - 2026-10-05
+
 ### Changed
 
-- Switch the project’s own development tooling from ESLint, Prettier and Vitest to [Vite+](https://viteplus.dev/) (`vp lint`, `vp fmt`, `vp test`). This does not change the published Stylelint config in any way.
-- Run `vp check --fix` on staged files before each commit, through a pre-commit hook set up automatically on `npm install`.
-- Enable type-aware linting with type checking in `vp lint` and `vp check`.
-- Update the development and testing Node.js version to 26 (was 24), refreshing `package-lock.json`.
-- Pick up `stylelint-config-recommended-scss` 17.0.1 through the lockfile refresh, where `no-invalid-position-declaration` ignores declarations inside `@mixin` at-rules.
-- Complete the `src/unused.mjs` triage with the rules declined in the Stylelint 17 upgrade, so `npm run test:rules` passes again.
 - Refine the `order/order` rule to order custom properties and block-less at-rules (such as `@include`) before declarations, while allowing at-rules with blocks (such as `@media`) anywhere in a rule. This is less strict than the previous configuration, which required `@include` to come first.
 - Configure `scss/at-rule-no-unknown` to ignore the at-rules used by Tailwind CSS and its integrations (`tailwind`, `apply`, `variants`, `responsive`, `screen`, `layer`). See [#41](https://github.com/wagtail/stylelint-config-wagtail/issues/41).
 - Ignore `margin` and `padding` shorthands in `declaration-block-no-redundant-longhand-properties`, so spacing longhands can be written side by side on one line. Other shorthands are still enforced. See [#42](https://github.com/wagtail/stylelint-config-wagtail/issues/42).
 - Disallow the deprecated `word-wrap` property and the `word-break: break-word` value, in favour of `overflow-wrap` (and `overflow-wrap: anywhere`). See [#44](https://github.com/wagtail/stylelint-config-wagtail/issues/44).
 - Allow `data-` attributes in selectors when they have a value (for example `[data-state="open"]`), while still disallowing bare `data-` attributes. This replaces the previous blanket disallowing of all `data-` attributes. See [#47](https://github.com/wagtail/stylelint-config-wagtail/issues/47).
-- Run the `CI` and `CodeQL` workflows on the `ubuntu-26.04-arm` runner. This does not change the published Stylelint config.
 
 ## [2.0.0](https://github.com/wagtail/stylelint-config-wagtail/releases/tag/2.0.0) - 2026-04-23
 
