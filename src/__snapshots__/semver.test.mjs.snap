@@ -160,8 +160,10 @@ exports[`semver - should those tests break, consider releasing a new major versi
   ],
   "order/order": [
     [
+      "dollar-variables",
+      "custom-properties",
       {
-        "name": "include",
+        "hasBlock": false,
         "type": "at-rule",
       },
       "declarations",
