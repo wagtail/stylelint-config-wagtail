@@ -33,12 +33,12 @@ module.exports = {
     'max-nesting-depth': 3,
     'media-feature-name-no-unknown': true,
     'no-empty-source': true,
-    // Mixins should always be first in declarations
+    // Variables, then mixins/includes and other block-less at-rules, then declarations.
+    // At-rules with blocks (e.g. @media) can come after declarations.
     'order/order': [
-      {
-        name: 'include',
-        type: 'at-rule',
-      },
+      'dollar-variables',
+      'custom-properties',
+      { type: 'at-rule', hasBlock: false },
       'declarations',
     ],
     'property-disallowed-list': [

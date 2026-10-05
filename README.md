@@ -172,7 +172,7 @@ To get the most out of this config, it is assumed that projects have the followi
 | [`no-invalid-position-at-import-rule`][32]                   | `{"ignoreAtRules":["use","forward"]}`                               |
 | [`no-invalid-position-declaration`][33]                      | `{"ignoreAtRules":["mixin"]}`                                       |
 | [`no-irregular-whitespace`][34]                              | Enabled                                                             |
-| [`order/order`][35]                                          | `[{"name":"include","type":"at-rule"},"declarations"]`              |
+| [`order/order`][35]                                          | Enabled - [see Config][config]                                      |
 | [`property-disallowed-list`][36]                             | `["/forced-color-adjust/","/left/","/right/","text-transform"]`     |
 | [`property-no-deprecated`][37]                               | Enabled                                                             |
 | [`property-no-unknown`][38]                                  | Enabled                                                             |

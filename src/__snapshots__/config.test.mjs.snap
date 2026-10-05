@@ -108,7 +108,7 @@ exports[`config > scenarios > no-empty-source 1`] = `
 
 exports[`config > scenarios > order/order 1`] = `
 [
-  "Expected @include to come before declaration (order/order)",
+  "Expected blockless at-rule to come before declaration (order/order)",
 ]
 `;
 
