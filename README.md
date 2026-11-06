@@ -93,6 +93,10 @@ Stylelint supports ignore patterns in a `.stylelintignore` file, however we tend
 
 This config is [Prettier](https://prettier.io/)-compatible, there isn’t anything extra needed.
 
+### Design tokens
+
+We enforce consistent use of design tokens for values of colors, fonts, spacing, and z-index. We allow CSS-native keyword values, and external references (variables, functions, etc).
+
 ### Tailwind
 
 This config should work with [Tailwind](https://tailwindcss.com/) with no adjustments needed. Please submit an issue if that’s not the case.

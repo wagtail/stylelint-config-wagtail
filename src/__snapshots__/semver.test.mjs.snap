@@ -211,6 +211,7 @@ exports[`semver - should those tests break, consider releasing a new major versi
       "/-color/",
       "fill",
       "stroke",
+      "font",
       "font-family",
       "font-size",
       "font-weight",
@@ -220,6 +221,7 @@ exports[`semver - should those tests break, consider releasing a new major versi
       "z-index",
     ],
     {
+      "expandShorthand": true,
       "ignoreValues": [
         "currentColor",
         "inherit",

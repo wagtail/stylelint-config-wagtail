@@ -77,6 +77,8 @@ module.exports = {
         'fill',
         'stroke',
         // Font tokens should come from our design tokens.
+        // Check the shorthand directly, as expansion does not reliably check its font values.
+        'font',
         'font-family',
         'font-size',
         'font-weight',
@@ -88,6 +90,8 @@ module.exports = {
         'z-index',
       ],
       {
+        // Check color values in shorthands such as background, border, and outline.
+        expandShorthand: true,
         ignoreValues: [
           'currentColor',
           'inherit',
