@@ -5,6 +5,9 @@
 > Shareable stylelint config for CSS and SCSS, following [Wagtail’s code style](https://docs.wagtail.org/en/latest/contributing/ui_guidelines.html).
 
 - [Usage](#usage)
+- [Related tools](#related-tools)
+  - [Complementary tools](#complementary-tools)
+  - [Alternatives](#alternatives)
 - [Links](#links)
 - [Contribution Guidelines](#contribution-guidelines)
   - [Install](#install)
@@ -119,12 +122,35 @@ repos:
           - '@wagtail/stylelint-config-wagtail@2.0.0'
 ```
 
-### Related tools
+## Related tools
+
+### Complementary tools
 
 To get the most out of this config, it is assumed that projects have the following tools set up:
 
 - [Vite+](https://viteplus.dev/) (or another code formatter such as [Prettier](https://prettier.io/)) for automated formatting of stylesheets.
 - [Browserslist](https://github.com/browserslist/browserslist) and [autoprefixer](https://github.com/postcss/autoprefixer).
+
+### Alternatives
+
+Other tools can check CSS without Stylelint. The two maintained general-purpose alternatives are [Biome](https://biomejs.dev/linter/css/rules/) (Rust, lints and formats CSS and SCSS in one binary) and ESLint’s official [`@eslint/css`](https://github.com/eslint/css) plugin. They are good substitutes for correctness checks, but not for this config’s conventions — see the table below and the comparison on Biome’s site, which also documents [which of its rules are ported from Stylelint](https://biomejs.dev/linter/css/sources/).
+
+| Criteria                     | `@wagtail/stylelint-config-wagtail`                                                                             | Biome                                                                                                                             | `@eslint/css`                                                                                    |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| Engine and language          | JavaScript, on Stylelint and PostCSS                                                                            | Rust binary                                                                                                                       | JavaScript, on ESLint (with a fork of [CSSTree](https://github.com/csstree/csstree) for parsing) |
+| Current release              | Stylelint 18 (`>=17` supported); Node 22+, ESM-only                                                             | 2.6.5 (2.6 added SCSS support)                                                                                                    | 2.0.1 (requires ESLint 9.15+ with flat config)                                                   |
+| CSS rules available to users | ~100 built-in Stylelint rules plus `stylelint-scss`, `stylelint-order` and `stylelint-declaration-strict-value` | 48 CSS rules, 27 recommended by default                                                                                           | 15 rules, 9 recommended by default                                                               |
+| Rules enforced by default    | 71 (listed under [Rules](#rules)), with opinionated values instead of defaults                                  | ~1,000 rules across all languages, ~27 for CSS                                                                                    | ~40 rules across all languages, ~9 for CSS                                                       |
+| Scope, by type               | Correctness and conventions: BEM class names, logical properties, token-only values, ordering                   | Mostly correctness: unknown properties, units, functions; includes a few convention rules (`useLogicalProperties`, `noHexColors`) | Correctness only: unknown properties, duplicate imports, unmatchable selectors                   |
+| SCSS support                 | First-class, via `stylelint-scss`                                                                               | Added in v2.6; loops and mixins are not fully covered                                                                             | None; CSS only (custom syntax can be registered)                                                 |
+| Formatting                   | Separate: use Vite+ or Prettier                                                                                 | Built in (`biome format`, `biome check`)                                                                                          | None, by design                                                                                  |
+| Browser support checks       | Not included in this config; available via `stylelint-plugin-use-baseline`                                      | `useBaseline`, in the recommended set                                                                                             | `use-baseline`, in the recommended set                                                           |
+| Migration from Stylelint     | Not applicable                                                                                                  | `biome migrate stylelint`; ports identical rules by default and only inspired rules with `--include-inspired`                     | None                                                                                             |
+| Differences from this config | —                                                                                                               | No rule for class-name patterns, token-only values, or declaration order                                                          | No convention rules, no SCSS                                                                     |
+
+Both alternatives are closer to `stylelint-config-recommended` than to this config: they would catch invalid or deprecated CSS, but not enforce Wagtail’s naming, spacing and token conventions. Note that `biome migrate stylelint` only reads JSON or JavaScript Stylelint configs (not YAML), and that rules it only took inspiration from are skipped unless you opt in, with some rule options unimplemented either way.
+
+For the categories no CSS linter covers statically — such as unused CSS, colour contrast and forced-colors rendering — see the [roadmap](./docs/ROADMAP.md).
 
 ## What’s included
 
